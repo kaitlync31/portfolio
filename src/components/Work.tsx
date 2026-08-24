@@ -7,7 +7,7 @@ type SupportingProject = {
   title: string;
   tags: string;
   description: string;
-  href: string;
+  href?: string;
 };
 
 const SUPPORTING: SupportingProject[] = [
@@ -27,15 +27,49 @@ const SUPPORTING: SupportingProject[] = [
       "Why do experts abandon disruptive ideas? Ongoing research into the emotional — not just cognitive — barriers to innovation, and three LLM-powered systems built to test the difference.",
     href: "/work/dtr-research",
   },
+  {
+    number: "04",
+    title: "Coverd",
+    tags: "Product · User Research",
+    description:
+      "Early-stage product strategy and go-to-market for a startup finding out whether its first idea was the right one.",
+  },
+  {
+    number: "05",
+    title: "AI Safety Research",
+    tags: "Research · AI",
+    description: "Case study coming soon.",
+  },
 ];
 
-const MORE_PROJECTS = [
-  "Coverd",
-  "On Task",
-  "Group Dining",
-  "AI Safety Research",
-  "Japanese Quiz Generator",
-];
+const MORE_PROJECTS = ["On Task", "Group Dining", "Japanese Quiz Generator"];
+
+function SupportingCard({ project }: { project: SupportingProject }) {
+  const content = (
+    <>
+      <p className="font-sans text-xs text-stone-light">{project.number}</p>
+      <h4 className="mt-2 font-serif text-xl text-ink transition-colors group-hover:text-clay">
+        {project.title}
+      </h4>
+      <p className="mt-1 font-sans text-xs uppercase tracking-[0.1em] text-stone">
+        {project.tags}
+      </p>
+      <p className="mt-4 font-sans text-sm leading-6 text-stone">
+        {project.description}
+      </p>
+    </>
+  );
+
+  if (project.href) {
+    return (
+      <Link href={project.href} className="group block">
+        {content}
+      </Link>
+    );
+  }
+
+  return <div>{content}</div>;
+}
 
 export default function Work() {
   return (
@@ -72,18 +106,7 @@ export default function Work() {
 
       <div className="mt-20 grid gap-x-12 gap-y-14 border-t border-line pt-14 sm:grid-cols-2">
         {SUPPORTING.map((project) => (
-          <Link key={project.title} href={project.href} className="group block">
-            <p className="font-sans text-xs text-stone-light">{project.number}</p>
-            <h4 className="mt-2 font-serif text-xl text-ink group-hover:text-clay transition-colors">
-              {project.title}
-            </h4>
-            <p className="mt-1 font-sans text-xs uppercase tracking-[0.1em] text-stone">
-              {project.tags}
-            </p>
-            <p className="mt-4 font-sans text-sm leading-6 text-stone">
-              {project.description}
-            </p>
-          </Link>
+          <SupportingCard key={project.title} project={project} />
         ))}
       </div>
 
