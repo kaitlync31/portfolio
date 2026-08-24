@@ -1,8 +1,8 @@
 const LINKS = [
-  { href: "#work", label: "Work" },
-  { href: "#leadership", label: "Leadership" },
-  { href: "#creative", label: "Creative" },
-  { href: "#about", label: "About" },
+  { href: "/#work", label: "Work" },
+  { href: "/#leadership", label: "Leadership" },
+  { href: "/#creative", label: "Creative" },
+  { href: "/#about", label: "About" },
 ];
 
 export default function Footer() {

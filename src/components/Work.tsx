@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Section from "./Section";
 import PlaceholderImage from "./PlaceholderImage";
 
@@ -12,19 +13,19 @@ type SupportingProject = {
 const SUPPORTING: SupportingProject[] = [
   {
     number: "02",
-    title: "DTR Research",
-    tags: "HCI · Research · Design",
+    title: "KNN Dashboard",
+    tags: "Product · Leadership · Execution",
     description:
-      "A study on ambiguity in early-stage products — what happens when the thing you're designing doesn't have a name yet.",
-    href: "#",
+      "Inherited a stalled nonprofit-data project with eight weeks left. Rebuilt how the team worked, learned a new stack, and shipped an interactive dashboard covering 21,000+ organizations.",
+    href: "/work/knn-dashboard",
   },
   {
     number: "03",
-    title: "KNN Dashboard",
-    tags: "Product · Design · Engineering",
+    title: "DTR Research",
+    tags: "HCI · Research · AI",
     description:
-      "An internal tool nobody asked for by name, built after watching a team lose an hour a day to a problem they'd stopped noticing.",
-    href: "#",
+      "Why do experts abandon disruptive ideas? Ongoing research into the emotional — not just cognitive — barriers to innovation, and three LLM-powered systems built to test the difference.",
+    href: "/work/dtr-research",
   },
   {
     number: "04",
@@ -39,7 +40,7 @@ const SUPPORTING: SupportingProject[] = [
 export default function Work() {
   return (
     <Section id="work" title="Work" subtitle="Products, research, and things I've built.">
-      <a href="#" className="group block">
+      <Link href="/work/wsj-challenges" className="group block">
         <PlaceholderImage
           label="WSJ Challenges"
           caption="Product walkthrough"
@@ -67,11 +68,11 @@ export default function Work() {
             </span>
           </div>
         </div>
-      </a>
+      </Link>
 
       <div className="mt-20 grid gap-x-8 gap-y-14 border-t border-line pt-14 sm:grid-cols-3">
         {SUPPORTING.map((project) => (
-          <a key={project.title} href={project.href} className="group block">
+          <Link key={project.title} href={project.href} className="group block">
             <p className="font-sans text-xs text-stone-light">{project.number}</p>
             <h4 className="mt-2 font-serif text-xl text-ink group-hover:text-clay transition-colors">
               {project.title}
@@ -82,7 +83,7 @@ export default function Work() {
             <p className="mt-4 font-sans text-sm leading-6 text-stone">
               {project.description}
             </p>
-          </a>
+          </Link>
         ))}
       </div>
     </Section>
