@@ -42,7 +42,12 @@ const SUPPORTING: SupportingProject[] = [
   },
 ];
 
-const MORE_PROJECTS = ["On Task", "Group Dining", "Japanese Quiz Generator"];
+const MORE_PROJECTS = [
+  "On Task",
+  "Group Dining",
+  "Japanese Quiz Generator",
+  "Careon",
+];
 
 function SupportingCard({ project }: { project: SupportingProject }) {
   const content = (
