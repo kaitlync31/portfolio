@@ -4,7 +4,7 @@ export default function Intro() {
       <div className="grid gap-10 sm:grid-cols-12">
         <h2 className="sm:col-span-4">
           <span className="font-serif text-3xl italic leading-tight text-ink">
-            The throughline.
+            The throughline...
           </span>
         </h2>
         <div className="space-y-5 font-sans text-base leading-8 text-stone sm:col-span-7 sm:col-start-6">
