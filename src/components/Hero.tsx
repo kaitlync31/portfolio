@@ -10,7 +10,7 @@ export default function Hero() {
       <p className="mt-7 max-w-lg font-sans text-lg leading-8 text-stone">
         I&apos;m a Computer Science + Cognitive Science student at
         Northwestern University fascinated by the intersections of people,
-        information, and technology.
+        information, art, and technology.
       </p>
       <a
         href="#collage"
