@@ -130,7 +130,7 @@ export default function Work() {
             >
               <span>{title}</span>
               <span className="font-sans text-xs italic text-stone-light">
-                details coming
+                coming soon
               </span>
             </li>
           ))}
