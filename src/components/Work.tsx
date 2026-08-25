@@ -38,8 +38,10 @@ const SUPPORTING: SupportingProject[] = [
   {
     number: "05",
     title: "AI Safety Research",
-    tags: "Research · AI",
-    description: "Case study coming soon.",
+    tags: "Research · NLP · ML",
+    description:
+      "Cold-emailed a PhD student about AI safety, then built the ETL pipeline and trained the models to measure how persuasive AI-generated political statements really are.",
+    href: "/work/ai-safety-research",
   },
 ];
 
