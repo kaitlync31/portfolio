@@ -1,5 +1,6 @@
 import Section from "./Section";
 import Currently from "./Currently";
+import PlaceholderImage from "./PlaceholderImage";
 
 const INTERESTS = [
   "AI",
@@ -30,22 +31,28 @@ export default function About() {
             building and exploring at these intersections and hope to
             pursue a career in product after graduation.
           </p>
+          <div className="pt-2">
+            <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink">
+              Currently interested in
+            </p>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {INTERESTS.map((interest) => (
+                <li
+                  key={interest}
+                  className="border border-line px-3 py-1 font-sans text-xs text-stone"
+                >
+                  {interest}
+                </li>
+              ))}
+            </ul>
+          </div>
           <Currently />
         </div>
-        <div className="border-l border-line pl-8 sm:col-span-4 sm:col-start-9">
-          <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink">
-            Currently interested in
-          </p>
-          <ul className="mt-3 flex flex-wrap gap-2">
-            {INTERESTS.map((interest) => (
-              <li
-                key={interest}
-                className="border border-line px-3 py-1 font-sans text-xs text-stone"
-              >
-                {interest}
-              </li>
-            ))}
-          </ul>
+        <div className="sm:col-span-4 sm:col-start-9">
+          <PlaceholderImage
+            label="Portrait"
+            className="aspect-[4/5] w-full"
+          />
         </div>
       </div>
     </Section>
