@@ -13,7 +13,7 @@ const ROLES: Role[] = [
     org: "CS 211",
     theme: "Teaching",
     description:
-      "Leading office hours and code reviews to help 90+ students learn C and C++.",
+      "Leading office hours and code reviews to help 90+ students learn programming in C/C++.",
   },
   {
     title: "VP Professional Development",
