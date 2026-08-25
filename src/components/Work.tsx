@@ -98,7 +98,7 @@ export default function Work() {
               consumer behavior and competitors, identified an opportunity
               around guided reading, and helped take the concept from zero →
               beta in collaboration with product, design, engineering,
-              newsroom, and marketing.
+              newsroom, and data analytics.
             </p>
           </div>
           <div className="flex items-end sm:col-span-4 sm:justify-end">
