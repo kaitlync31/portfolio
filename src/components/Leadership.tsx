@@ -13,21 +13,21 @@ const ROLES: Role[] = [
     org: "CS 211",
     theme: "Teaching",
     description:
-      "Helping students make sense of difficult programming concepts.",
+      "Leading office hours and code reviews to help 90+ students learn C and C++.",
   },
   {
     title: "VP Professional Development",
     org: "Ascend Consulting Group",
     theme: "Training",
     description:
-      "Designed a six-week training program for 40+ new members, then kept them growing through mentorship and professional events.",
+      "Designed a six-week training program for 40+ new members to prepare them for real client engagements.",
   },
   {
     title: "Junior Board Member",
     org: "Northwestern Women in Computing",
-    theme: "Making space",
+    theme: "Building community",
     description:
-      "Planning workshops, speaker series, and networking nights that make tech feel less unfamiliar for the women pursuing it.",
+      "Planning events to build community and support for women in tech on campus.",
   },
 ];
 
