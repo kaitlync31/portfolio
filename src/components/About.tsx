@@ -36,16 +36,9 @@ export default function About() {
           <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink">
             Currently interested in
           </p>
-          <ul className="mt-3 flex flex-wrap gap-2">
-            {INTERESTS.map((interest) => (
-              <li
-                key={interest}
-                className="border border-line px-3 py-1 font-sans text-xs text-stone"
-              >
-                {interest}
-              </li>
-            ))}
-          </ul>
+          <p className="mt-3 font-sans text-xs uppercase tracking-[0.1em] leading-6 text-stone">
+            {INTERESTS.join(" · ")}
+          </p>
         </div>
       </div>
     </Section>
