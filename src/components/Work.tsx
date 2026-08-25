@@ -97,8 +97,8 @@ export default function Work() {
               Starting with an open-ended engagement problem, I researched
               consumer behavior and competitors, identified an opportunity
               around guided reading, and helped take the concept from zero →
-              beta with product, design, engineering, newsroom, and
-              marketing.
+              beta in collaboration with product, design, engineering,
+              newsroom, and marketing.
             </p>
           </div>
           <div className="flex items-end sm:col-span-4 sm:justify-end">
