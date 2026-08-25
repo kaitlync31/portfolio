@@ -90,8 +90,8 @@ export default function Work() {
             <p className="font-sans text-xs uppercase tracking-[0.14em] text-clay">
               Product Design · Research · UX
             </p>
-            <h3 className="mt-3 font-serif text-2xl italic leading-tight text-ink group-hover:text-clay transition-colors">
-              Can you make reading the news a habit?
+            <h3 className="mt-3 font-serif text-2xl leading-tight text-ink group-hover:text-clay transition-colors">
+              WSJ Challenges
             </h3>
             <p className="mt-4 max-w-2xl font-sans text-base leading-7 text-stone">
               Starting with an open-ended engagement problem, I researched
