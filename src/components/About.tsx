@@ -7,7 +7,6 @@ const INTERESTS = [
   "Figma Make",
   "Adaptive UI",
   "Claude Monet",
-  "Excel Shortcuts",
 ];
 
 export default function About() {
