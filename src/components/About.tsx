@@ -1,5 +1,4 @@
 import Section from "./Section";
-import Currently from "./Currently";
 import PlaceholderImage from "./PlaceholderImage";
 
 const INTERESTS = [
@@ -46,7 +45,6 @@ export default function About() {
               ))}
             </ul>
           </div>
-          <Currently />
         </div>
         <div className="sm:col-span-4 sm:col-start-9">
           <PlaceholderImage
