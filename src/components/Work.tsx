@@ -83,14 +83,14 @@ export default function Work() {
         <PlaceholderImage
           label="WSJ Challenges"
           caption="Product walkthrough"
-          className="aspect-[16/10] w-full"
+          className="aspect-[16/7] w-full"
         />
         <div className="mt-6 grid gap-6 sm:grid-cols-12">
           <div className="sm:col-span-8">
             <p className="font-sans text-xs uppercase tracking-[0.14em] text-clay">
               Product Design · Research · UX
             </p>
-            <h3 className="mt-3 font-serif text-3xl italic leading-tight text-ink group-hover:text-clay transition-colors">
+            <h3 className="mt-3 font-serif text-2xl italic leading-tight text-ink group-hover:text-clay transition-colors">
               Can you make reading the news a habit?
             </h3>
             <p className="mt-4 max-w-2xl font-sans text-base leading-7 text-stone">
