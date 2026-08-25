@@ -17,16 +17,17 @@ const ROLES: Role[] = [
   },
   {
     title: "VP Professional Development",
-    org: "Kappa Theta Pi",
-    theme: "Building community",
-    description: "Training 40+ members for real client engagements.",
+    org: "Ascend Consulting Group",
+    theme: "Training",
+    description:
+      "Designed a six-week training program for 40+ new members, then kept them growing through mentorship and professional events.",
   },
   {
-    title: "Junior Board",
-    org: "Women in Computing",
+    title: "Junior Board Member",
+    org: "Northwestern Women in Computing",
     theme: "Making space",
     description:
-      "Building a place where women in tech at Northwestern find each other early.",
+      "Planning workshops, speaker series, and networking nights that make tech feel less unfamiliar for the women pursuing it.",
   },
 ];
 
@@ -41,9 +42,7 @@ export default function Leadership() {
         {ROLES.map((role) => (
           <div key={role.title}>
             <p className="font-serif text-xl italic text-clay">{role.theme}</p>
-            <p className="mt-4 font-sans text-lg text-ink">
-              &ldquo;{role.description}&rdquo;
-            </p>
+            <p className="mt-4 font-sans text-lg text-ink">{role.description}</p>
             <p className="mt-4 font-sans text-sm text-stone">
               {role.title} · {role.org}
             </p>
