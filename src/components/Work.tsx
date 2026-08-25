@@ -96,9 +96,9 @@ export default function Work() {
             <p className="mt-4 max-w-2xl font-sans text-base leading-7 text-stone">
               Starting with an open-ended engagement problem, I researched
               consumer behavior and competitors, identified an opportunity
-              around guided reading, and led the concept from zero → beta in
-              collaboration with product, design, engineering, newsroom, and
-              data analytics.
+              around guided reading, and drove the concept from zero → beta
+              in collaboration with product, design, engineering, newsroom,
+              and data analytics.
             </p>
           </div>
           <div className="flex items-end sm:col-span-4 sm:justify-end">
