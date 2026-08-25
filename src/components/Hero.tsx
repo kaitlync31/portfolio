@@ -5,7 +5,7 @@ export default function Hero() {
         Product · Research · Design · Engineering
       </p>
       <h1 className="max-w-3xl font-serif text-[2.75rem] italic leading-[1.1] tracking-tight text-ink sm:text-6xl">
-        I like turning ideas into experiences people connect with.
+        I like bringing the vision to life.
       </h1>
       <p className="mt-7 max-w-lg font-sans text-lg leading-8 text-stone">
         I&apos;m a computer science + cognitive science student exploring the
