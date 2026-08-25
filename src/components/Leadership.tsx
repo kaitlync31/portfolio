@@ -27,7 +27,7 @@ const ROLES: Role[] = [
     org: "Northwestern Women in Computing",
     theme: "Building community",
     description:
-      "Planning events to build community and support for women in tech on campus.",
+      "Planning events and workshops to empower a community of 100+ women in tech on campus.",
   },
 ];
 
