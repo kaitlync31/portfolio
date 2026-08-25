@@ -16,7 +16,7 @@ export default function Intro() {
             taught me to put something in a body and put that body on stage.
           </p>
           <p>
-            Computer science and cognitive science came later, and they gave
+            Computer Science and Cognitive Science came later, and they gave
             me a second language for the same question — how people think,
             what they actually need, and how to build something that meets
             them there. Product is where all of it converges.
