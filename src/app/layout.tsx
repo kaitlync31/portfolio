@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Kaitlyn Chen",
   description:
-    "I like bringing the vision to life. Product, research, design, and engineering by Kaitlyn Chen.",
+    "Bringing the vision to life. Product, research, design, and engineering by Kaitlyn Chen.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
