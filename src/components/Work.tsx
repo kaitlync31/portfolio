@@ -32,7 +32,8 @@ const SUPPORTING: SupportingProject[] = [
     title: "Coverd",
     tags: "Product · User Research",
     description:
-      "Early-stage product strategy and go-to-market for a startup finding out whether its first idea was the right one.",
+      "21 user interviews into a gamified finance app for Gen Z, and the line between a startup and a scam in the eyes of a skeptical user.",
+    href: "/work/coverd",
   },
   {
     number: "05",
