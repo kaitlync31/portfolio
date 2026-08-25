@@ -4,9 +4,9 @@ import PlaceholderImage from "./PlaceholderImage";
 const INTERESTS = [
   "Human-Centered AI",
   "Fintech",
-  "Productivity",
   "Figma Make",
   "Adaptive UI",
+  "Claude Monet",
   "Excel Shortcuts",
 ];
 
