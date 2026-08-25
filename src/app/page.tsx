@@ -7,7 +7,6 @@ import Thinking from "@/components/Thinking";
 import Leadership from "@/components/Leadership";
 import Creative from "@/components/Creative";
 import About from "@/components/About";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
         <Leadership />
         <Creative />
         <About />
-        <Contact />
       </main>
       <Footer />
     </div>
