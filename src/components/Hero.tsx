@@ -8,8 +8,9 @@ export default function Hero() {
         Bringing the vision to life.
       </h1>
       <p className="mt-7 max-w-lg font-sans text-lg leading-8 text-stone">
-        I&apos;m a computer science + cognitive science student exploring the
-        intersection of technology, human behavior, and product.
+        I&apos;m a computer science + cognitive science student at
+        Northwestern University fascinated by the intersections of people,
+        information, and technology.
       </p>
       <a
         href="#collage"
