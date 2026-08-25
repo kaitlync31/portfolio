@@ -2,12 +2,12 @@ import Section from "./Section";
 import PlaceholderImage from "./PlaceholderImage";
 
 const INTERESTS = [
-  "AI",
-  "HCI",
+  "Human-Centered AI",
   "Fintech",
   "Productivity",
-  "Information",
-  "Human behavior",
+  "Figma Make",
+  "Adaptive UI",
+  "Excel Shortcuts",
 ];
 
 export default function About() {
