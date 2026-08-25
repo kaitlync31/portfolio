@@ -23,10 +23,19 @@ export default function About() {
       <div className="grid gap-12 sm:grid-cols-12">
         <div className="space-y-5 font-sans text-base leading-8 text-stone sm:col-span-7">
           <p>
-            Journalism kid, then CS + Cognitive Science student, now a
-            product person in progress. The through-line has stayed the
-            same the whole way — I want to know how people think, and I
-            want to build the thing that meets them there.
+            Originally from the Bay Area, I&apos;m a rising junior at
+            Northwestern studying Computer Science and Cognitive Science
+            with a minor in Business Institutions. I have experience across
+            product, design, software, and research, from early-stage
+            startups to products serving millions of subscribers.
+          </p>
+          <p>
+            I&apos;m particularly interested in the intersection of these
+            areas and the ever-so-exciting field of AI, as I believe it
+            opens up so many opportunities to improve user experiences and
+            expand what we&apos;re capable of creating. I plan to continue
+            building and exploring at these intersections and hope to
+            pursue a career in product after graduation.
           </p>
           <div className="pt-2">
             <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink">
