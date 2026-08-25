@@ -11,8 +11,8 @@ export default function Intro() {
           <p>
             I have always identified as a creator. From choreographing
             dances in my living room at age seven, to designing
-            pixel-perfect layouts for my high school newspaper in InDesign,
-            to developing AI-powered user experiences for the Wall Street
+            pixel-perfect layouts for my high school newspaper, to
+            developing AI-powered user experiences for the Wall Street
             Journal this past summer, there is nothing I love more than
             playing with an idea and watching it come to life.
           </p>
