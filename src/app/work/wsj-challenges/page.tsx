@@ -364,13 +364,13 @@ export default function WSJChallenges() {
               </>,
               <>
                 <span className="text-ink">Newsroom CMS tool:</span>{" "}
-                enabling editors to dynamically build and publish new tracks
+                enabling editors to regularly build and publish new tracks
                 without engineering support
               </>,
               <>
                 <span className="text-ink">Corporate leaderboards:</span>{" "}
                 enterprise use cases for business subscribers to boost
-                motivation and learning
+                motivation and community learning
               </>,
             ]}
           />
