@@ -82,7 +82,7 @@ export default function KNNDashboard() {
             items={[
               "Split the team into frontend/backend teams so work could run in parallel to increase the speed of development.",
               "Reorganized our weekly syncs and added extra mid-week check-ins specifically to surface and resolve blockers faster, as the team had been losing days to blockers that sat unaddressed until the next scheduled meeting.",
-              "Re-anchored the team around why the project mattered. Morale was as much a blocker as schedule was, so I spent time reconnecting the team to the actual impact of the work — a tool that would help a nonprofit sector serving communities across the state — to motivate meeting milestones on time.",
+              "Re-anchored the team around why the project mattered. Morale was as much a blocker as schedule was, so I spent time reconnecting the team to the actual impact of the work (a tool that would help a nonprofit sector serving communities across the state) to motivate meeting milestones on time.",
             ]}
           />
           <p>
@@ -118,9 +118,9 @@ export default function KNNDashboard() {
           <SubHeading>Key tradeoff decisions</SubHeading>
           <CaseList
             items={[
-              "Cut print export from MVP scope. KNN specifically wanted a way to export dashboard views for print, but it wasn't feasible in the remaining timeline. Rather than dropping it silently, I made sure we delivered documentation for future implementation so KNN's team — or a future Develop for Good cohort — could pick it up.",
+              "Cut print export from MVP scope. KNN specifically wanted a way to export dashboard views for print, but it wasn't feasible in the remaining timeline. Rather than dropping it silently, I made sure we delivered documentation for future implementation so KNN's team (or a future Develop for Good cohort) could pick it up.",
               "Parallelized frontend/backend work over sequential handoffs. Faster, but required tighter coordination and more frequent syncs to keep both sides consistent, which is part of why I added the mid-week blocker meetings.",
-              "Prioritized shipping a working, polished MVP over expanding feature scope. With morale and schedule both at risk, I chose to protect quality and completion of the core experience — map, filters, KPIs, dynamic visualizations — over adding anything new.",
+              "Prioritized shipping a working, polished MVP over expanding feature scope. With morale and schedule both at risk, I chose to protect quality and completion of the core experience (map, filters, KPIs, dynamic visualizations) over adding anything new.",
             ]}
           />
         </CaseStudySection>
