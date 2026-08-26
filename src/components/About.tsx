@@ -1,5 +1,4 @@
 import Section from "./Section";
-import PlaceholderImage from "./PlaceholderImage";
 
 const INTERESTS = [
   "Human-Centered AI",
@@ -46,10 +45,14 @@ export default function About() {
           </div>
         </div>
         <div className="sm:col-span-4 sm:col-start-9">
-          <PlaceholderImage
-            label="Portrait"
-            className="aspect-[4/5] w-full"
-          />
+          <div className="aspect-[4/5] w-full overflow-hidden border border-line">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/portrait.jpg"
+              alt="Portrait of Kaitlyn Chen"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </Section>
