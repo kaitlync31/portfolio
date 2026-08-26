@@ -3,10 +3,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {
   CaseStudyHeader,
-  CaseStudyHero,
   TLDR,
   CaseStudySection,
   CaseStudyImage,
+  CaseStudyVideo,
   CaseList,
   SubHeading,
   PullQuote,
@@ -32,10 +32,14 @@ export default function KNNDashboard() {
           timeline="Oct 2025 – Feb 2026"
         />
 
-        <CaseStudyHero
-          label="KNN Dashboard"
-          caption="Interactive dashboard embedded in KNN's WordPress site"
-        />
+        <div className="pt-10">
+          <CaseStudyVideo
+            src="/work/knn-dashboard-demo.mp4"
+            poster="/work/knn-dashboard-demo-poster.jpg"
+            caption="Interactive dashboard embedded in KNN's WordPress site"
+            aspect="aspect-[1200/706]"
+          />
+        </div>
 
         <TLDR>
           Kentucky Nonprofit Network wanted to turn static economic impact
