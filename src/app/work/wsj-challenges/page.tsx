@@ -319,16 +319,17 @@ export default function WSJChallenges() {
               </>,
               <>
                 <span className="text-ink">WSJ Mobile Engineering:</span>{" "}
-                built the Beta feature on a tight timeline
+                building the Beta feature on a tight timeline (2 weeks)
               </>,
               <>
-                <span className="text-ink">Newsroom:</span> approved and
-                shaped the editorial content and track structure
+                <span className="text-ink">Newsroom:</span> approving the
+                structure and content of challenges to align with newsroom
+                strategy
               </>,
               <>
-                <span className="text-ink">B2C Data Analytics:</span> helped
-                analyze user engagement patterns and define Beta success
-                metrics
+                <span className="text-ink">B2C Data Analytics:</span>{" "}
+                analyzing user engagement patterns to inform challenge track
+                themes and helping implement Beta success metrics
               </>,
             ]}
           />
