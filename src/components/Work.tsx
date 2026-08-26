@@ -93,7 +93,7 @@ export default function Work() {
         <div className="mt-6 grid gap-6 sm:grid-cols-12">
           <div className="sm:col-span-8">
             <p className="font-sans text-xs uppercase tracking-[0.14em] text-clay">
-              Product Design · Research · UX
+              Product · UX · Strategy
             </p>
             <h3 className="mt-3 font-serif text-2xl leading-tight text-ink group-hover:text-clay transition-colors">
               WSJ Challenges

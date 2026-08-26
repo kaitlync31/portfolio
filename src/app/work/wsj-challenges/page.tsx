@@ -37,7 +37,7 @@ export default function WSJChallenges() {
           src="/work/wsj-challenges-hero.png"
           alt="Three WSJ Beta app screens: the Get to Know WSJ challenge entry point, the Day 1 checklist, and the challenge completion screen"
           caption="Challenge entry point, daily checklist, and completion screen"
-          aspect="aspect-[1622/1114]"
+          aspect="aspect-[1582/1046]"
         />
 
         <TLDR>
