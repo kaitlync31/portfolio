@@ -360,7 +360,7 @@ export default function WSJChallenges() {
               </>,
               <>
                 <span className="text-ink">Automated task tracking:</span>{" "}
-                replacing the honor system as engineering capacity allows
+                replacing the honor system to reduce manual effort
               </>,
               <>
                 <span className="text-ink">Newsroom CMS tool:</span>{" "}
