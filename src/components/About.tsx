@@ -11,7 +11,7 @@ const INTERESTS = [
 
 export default function About() {
   return (
-    <Section id="about" title="About" subtitle="A little more about me">
+    <Section id="about" title="About">
       <div className="grid gap-12 sm:grid-cols-12">
         <div className="space-y-5 font-sans text-base leading-8 text-stone sm:col-span-7">
           <p>

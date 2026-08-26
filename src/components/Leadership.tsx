@@ -33,11 +33,7 @@ const ROLES: Role[] = [
 
 export default function Leadership() {
   return (
-    <Section
-      id="leadership"
-      title="Leadership"
-      subtitle="I like building with people — and helping them become better at it."
-    >
+    <Section id="leadership" title="Leadership">
       <div className="grid gap-x-8 gap-y-14 sm:grid-cols-3">
         {ROLES.map((role) => (
           <div key={role.title}>

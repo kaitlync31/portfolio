@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Collage from "@/components/Collage";
 import Intro from "@/components/Intro";
 import Work from "@/components/Work";
-import Thinking from "@/components/Thinking";
 import Leadership from "@/components/Leadership";
 import Creative from "@/components/Creative";
 import About from "@/components/About";
@@ -18,7 +17,6 @@ export default function Home() {
         <Collage />
         <Intro />
         <Work />
-        <Thinking />
         <Leadership />
         <Creative />
         <About />
