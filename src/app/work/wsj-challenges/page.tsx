@@ -8,6 +8,7 @@ import {
   CaseStudySection,
   CaseStudyImage,
   CaseList,
+  CaseTable,
   SubHeading,
   CaseStudyCredits,
 } from "@/components/CaseStudy";
@@ -120,32 +121,42 @@ export default function WSJChallenges() {
             Analyzing WSJ&apos;s subscriber segments and behaviors, I chose
             to target three segments with our Challenges experience:
           </p>
-          <CaseList
-            items={[
-              <>
+          <CaseTable
+            columns={["Segment", "Description", "Targeted Challenges"]}
+            rows={[
+              [
                 <span className="text-ink">
-                  Next Gen (Under 30 &amp; Students):
-                </span>{" "}
-                Ambitious and tech-forward, but often intimidated by dense
-                financial information. Highly responsive to gamification. →
-                Targeted Tracks: Markets 101, World Cup Coverage
-              </>,
-              <>
+                  Next Gen
+                  <br />
+                  <span className="text-stone-light">
+                    Under 30 &amp; Students
+                  </span>
+                </span>,
+                "Ambitious and tech-forward, but often intimidated by dense financial information. Highly responsive to gamification.",
+                "Markets 101, World Cup Coverage",
+              ],
+              [
                 <span className="text-ink">
-                  Pre-Suites (Early to Mid Career Professionals):
-                </span>{" "}
-                Career-driven and status-conscious, seeking a professional
-                edge and credentials. → Navigating the AI Boardroom, Read
-                Like a CEO, Election Debrief
-              </>,
-              <>
+                  Pre-Suites
+                  <br />
+                  <span className="text-stone-light">
+                    Early to Mid Career Professionals
+                  </span>
+                </span>,
+                "Career-driven and status-conscious, seeking a professional edge and credentials.",
+                "Navigating the AI Boardroom, Read Like a CEO, Election Debrief",
+              ],
+              [
                 <span className="text-ink">
-                  Explorers (Educated Millennials):
-                </span>{" "}
-                Higher churn risk; socially motivated and interested in
-                work-life balance and well-rounded intellectual culture. →
-                The Global Reader, The Weekend Detox
-              </>,
+                  Explorers
+                  <br />
+                  <span className="text-stone-light">
+                    Educated Millennials
+                  </span>
+                </span>,
+                "Higher churn risk; socially motivated and interested in work-life balance and well-rounded intellectual culture.",
+                "The Global Reader, The Weekend Detox",
+              ],
             ]}
           />
           <p>

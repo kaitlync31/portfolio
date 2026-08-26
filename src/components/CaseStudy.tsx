@@ -118,6 +118,47 @@ export function CaseList({ items }: { items: ReactNode[] }) {
   );
 }
 
+export function CaseTable({
+  columns,
+  rows,
+}: {
+  columns: string[];
+  rows: ReactNode[][];
+}) {
+  return (
+    <div className="-mx-1 overflow-x-auto px-1">
+      <table className="w-full min-w-[560px] border-collapse text-left">
+        <thead>
+          <tr>
+            {columns.map((col) => (
+              <th
+                key={col}
+                className="border-b border-line pb-3 pr-6 font-sans text-xs font-semibold uppercase tracking-[0.1em] text-ink"
+              >
+                {col}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={i} className="align-top">
+              {row.map((cell, j) => (
+                <td
+                  key={j}
+                  className="border-b border-line py-4 pr-6 font-sans text-sm leading-6 text-stone last:pr-0"
+                >
+                  {cell}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 export function CaseStudyImage({ label, caption }: { label: string; caption: string }) {
   return (
     <div className="mx-auto max-w-3xl px-6">
