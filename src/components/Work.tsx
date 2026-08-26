@@ -12,10 +12,10 @@ type SupportingProject = {
 const SUPPORTING: SupportingProject[] = [
   {
     number: "02",
-    title: "KNN Dashboard",
+    title: "Nonprofit Data Dashboard",
     tags: "Product · Engineering · Leadership",
     description:
-      "Inherited a stalled nonprofit-data project with eight weeks left. Rebuilt how the team worked, learned a new stack, and shipped an interactive dashboard covering 21,000+ organizations.",
+      "An interactive dashboard for Kentucky Nonprofit Network to help visualize the economic impact of the nonprofit sector.",
     href: "/work/knn-dashboard",
   },
   {
@@ -23,7 +23,7 @@ const SUPPORTING: SupportingProject[] = [
     title: "DTR Research",
     tags: "HCI · Research · Innovation",
     description:
-      "Why do experts abandon disruptive ideas? Ongoing research into the emotional — not just cognitive — barriers to innovation, and three LLM-powered systems built to test the difference.",
+      "Ongoing undergraduate research on why experts abandon disruptive innovations and how AI can help them overcome their fears.",
     href: "/work/dtr-research",
   },
   {
@@ -31,7 +31,7 @@ const SUPPORTING: SupportingProject[] = [
     title: "Coverd",
     tags: "Product · User Research",
     description:
-      "21 user interviews into a gamified finance app for Gen Z, and the line between a startup and a scam in the eyes of a skeptical user.",
+      "A deep dive into finance apps, gambling, and the fine line between a startup and a scam in the eyes of money-conscious college users.",
     href: "/work/coverd",
   },
   {
@@ -39,7 +39,7 @@ const SUPPORTING: SupportingProject[] = [
     title: "AI Safety Research",
     tags: "Research · NLP · ML",
     description:
-      "Cold-emailed a PhD student about AI safety, then built the ETL pipeline and trained the models to measure how persuasive AI-generated political statements really are.",
+      "An intensive learning experience on machine learning models, data processing, and AI safety through assisting a PhD student in his research.",
     href: "/work/ai-safety-research",
   },
 ];
