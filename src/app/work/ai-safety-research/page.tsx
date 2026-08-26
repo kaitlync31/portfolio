@@ -26,9 +26,9 @@ export default function AISafetyResearch() {
         <CaseStudyHeader
           eyebrow="AI Safety Research"
           title="Measuring how persuasive AI-generated political statements are, and to whom"
-          role="Research Assistant"
+          role="Undergraduate Research Assistant"
           team="Me, assisting a PhD student researcher"
-          timeline="Ongoing — currently paused due to funding cuts"
+          timeline="April 2025 – Sep 2025 (currently paused due to funding cuts)"
         />
 
         <CaseStudyHero
