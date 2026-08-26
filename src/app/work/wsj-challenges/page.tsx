@@ -240,7 +240,7 @@ export default function WSJChallenges() {
         <CaseStudyVideo
           src="/work/wsj-challenges-mvp-flow.mp4"
           poster="/work/wsj-challenges-mvp-flow-poster.jpg"
-          caption="Prototype flow"
+          caption="Prototype"
           aspect="aspect-[1200/612]"
         />
 
