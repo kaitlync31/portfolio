@@ -52,22 +52,24 @@ export function CaseStudyHero({
   caption,
   src,
   alt,
+  aspect = "aspect-[16/10]",
 }: {
   label: string;
   caption: string;
   src?: string;
   alt?: string;
+  aspect?: string;
 }) {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-10">
       {src ? (
         <figure>
-          <div className="overflow-hidden border border-line">
+          <div className={`overflow-hidden border border-line ${aspect}`}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={src}
               alt={alt ?? caption}
-              className="aspect-[16/10] w-full object-cover"
+              className="h-full w-full object-cover"
             />
           </div>
           <figcaption className="mt-3 font-sans text-xs italic text-stone">
@@ -75,7 +77,7 @@ export function CaseStudyHero({
           </figcaption>
         </figure>
       ) : (
-        <PlaceholderImage label={label} caption={caption} className="aspect-[16/10] w-full" />
+        <PlaceholderImage label={label} caption={caption} className={`${aspect} w-full`} />
       )}
     </div>
   );
