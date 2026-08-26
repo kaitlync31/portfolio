@@ -26,7 +26,7 @@ export default function DTRResearch() {
         <CaseStudyHeader
           eyebrow="DTR Research"
           title="Understanding the cognitive and emotional barriers that prevent experts from pursuing disruptive innovations, and designing AI-powered tools to help overcome them"
-          role="Design, Technology, and Research (DTR) Lab @ Northwestern University"
+          role="Student Researcher, Design, Technology, and Research (DTR) Lab @ Northwestern University"
           team="Me, solo (Winter quarter) → Me & research partner (Spring quarter onward)"
           timeline="Jan 2026 – present (ongoing)"
         />
