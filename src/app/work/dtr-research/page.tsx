@@ -241,7 +241,11 @@ export default function DTRResearch() {
         </CaseStudySection>
 
         <CaseStudyCredits>
-          Research Partner: Ilya Solovjov · Advisor: Haoqi Zhang
+          Thank you to my research partner, Ilya Solovjov, for always
+          bringing a fresh perspective, listening to my rants, and not being
+          afraid to play devil&apos;s advocate. And I am in eternal debt to
+          our research advisor, Haoqi Zhang, for creating such a welcoming
+          space for exploration, creativity, and self-confrontation in DTR.
         </CaseStudyCredits>
       </main>
       <Footer />
