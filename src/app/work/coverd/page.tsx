@@ -149,8 +149,9 @@ export default function Coverd() {
         </CaseStudySection>
 
         <CaseStudyCredits>
-          Thanks to Coverd&apos;s co-founders and the team of 9 student
-          consultants I worked alongside.
+          Thank you to the Coverd team for this incredible glimpse into the
+          startup world — it has been such a pleasure watching our ideas
+          come to life and the product grow rapidly in only a few months.
         </CaseStudyCredits>
       </main>
       <Footer />
