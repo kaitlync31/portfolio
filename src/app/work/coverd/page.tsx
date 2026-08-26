@@ -63,16 +63,6 @@ export default function Coverd() {
               "Helped prioritize features and improvements on the product roadmap, and gathered user feedback on newly implemented features to evaluate their effectiveness and inform next iterations.",
             ]}
           />
-          <p>
-            <a
-              href="https://docs.google.com/document/d/1bb6M7J9Vbf6Mc05p4sfQ5Gl-Xvn0cUG4eG7KxNaFJQE/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-ink underline decoration-line underline-offset-4 transition-colors hover:text-clay hover:decoration-clay"
-            >
-              View an example feedback report ↗
-            </a>
-          </p>
         </CaseStudySection>
 
         <CaseStudySection heading="Key Takeaways">
