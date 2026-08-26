@@ -128,8 +128,11 @@ export default function DTRResearch() {
         </CaseStudySection>
 
         <CaseStudyImage
-          label="DTR — three subsystems"
-          caption="Chatbot, role-distancing world, and debate game prototypes"
+          label="Role-Distancing Prototype"
+          src="/work/dtr-role-distancing.png"
+          alt="The Out There role-distancing prototype: a screen titled 'Choose a universe to enter' showing five planet cards, each describing a field norm inverted into an alternative universe"
+          caption="Out There: the role-distancing prototype"
+          aspect="aspect-[2294/1584]"
         />
 
         <CaseStudySection heading="The Solution">
