@@ -33,7 +33,10 @@ export default function DTRResearch() {
 
         <CaseStudyHero
           label="DTR Research"
-          caption="Affinity mapping and system prototypes"
+          src="/work/dtr-workflow.png"
+          alt="Revised LLM workflow diagram mapping the emotional acknowledgment chatbot's decision tree, from problem framing through field norms, legitimacy criteria, and new solution generation"
+          caption="Mappings of user flows and system designs"
+          aspect="aspect-[2252/1192]"
         />
 
         <TLDR>
