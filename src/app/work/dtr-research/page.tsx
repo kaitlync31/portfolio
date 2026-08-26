@@ -27,7 +27,7 @@ export default function DTRResearch() {
           eyebrow="DTR Research"
           title="Understanding the cognitive and emotional barriers that prevent experts from pursuing disruptive innovations, and designing AI-powered tools to help overcome them"
           role="Student Researcher, Design, Technology, and Research (DTR) Lab @ Northwestern University"
-          team="Me & research partner, plus the DTR community"
+          team="Me & one research partner, plus the DTR community"
           timeline="Jan 2026 – present"
         />
 
