@@ -136,9 +136,20 @@ export default function Coverd() {
           </p>
           <CaseList
             items={[
-              "Domain knowledge is crucial — I learned about finance (how credit cards work), gambling (casino layouts, stigma), and risk (payout odds) within a few weeks.",
+              <>
+                <span className="text-ink">Domain knowledge is crucial:</span>{" "}
+                I learned about finance (how credit cards work), gambling
+                (casino layouts, stigma), and risk (payout odds) within a
+                few weeks.
+              </>,
               "Variety in user personas is critical (non-gamblers vs. experienced gamblers). Users will also give contradictory feedback, but the majority opinion isn't always the best solution.",
-              "Edge cases can easily be neglected but pose major risks — one user's lucky $5,000 win broke the backend system, forcing a temporary shutdown.",
+              <>
+                <span className="text-ink">
+                  Edge cases can easily be neglected but pose major risks:
+                </span>{" "}
+                one user&apos;s lucky $5,000 win broke the backend system,
+                forcing a temporary shutdown.
+              </>,
               "Differentiation is key. The personal finance app market is crowded, but Coverd's gamification features are genuinely unique — recognizing that was crucial for guiding feature ideation and protecting the app's competitive advantage.",
             ]}
           />

@@ -269,9 +269,23 @@ export default function WSJChallenges() {
           <p>Key tradeoff decisions I drove and documented:</p>
           <CaseList
             items={[
-              "Honor system over automated tracking for MVP — automated task-completion tracking would have required more engineering investment than our timeline allowed.",
-              "No hard resets on missed days — prioritized subscriber motivation over rigid streak enforcement.",
-              "Quizzes moved out of scope — reduced engineering lift and allowed us to validate the core habit loop before adding assessment mechanics.",
+              <>
+                <span className="text-ink">
+                  Honor system over automated tracking for MVP:
+                </span>{" "}
+                automated task-completion tracking would have required more
+                engineering investment than our timeline allowed.
+              </>,
+              <>
+                <span className="text-ink">No hard resets on missed days:</span>{" "}
+                prioritized subscriber motivation over rigid streak
+                enforcement.
+              </>,
+              <>
+                <span className="text-ink">Quizzes moved out of scope:</span>{" "}
+                reduced engineering lift and allowed us to validate the core
+                habit loop before adding assessment mechanics.
+              </>,
             ]}
           />
 
@@ -293,11 +307,29 @@ export default function WSJChallenges() {
           </p>
           <CaseList
             items={[
-              "WSJ Design & Platform Design — design system guidance and UI review",
-              "WSJ Product — business alignment and roadmap prioritization",
-              "WSJ Mobile Engineering — built the Beta feature on a tight timeline",
-              "Newsroom — approved and shaped the editorial content and track structure",
-              "B2C Data Analytics — helped analyze user engagement patterns and define Beta success metrics",
+              <>
+                <span className="text-ink">
+                  WSJ Design &amp; Platform Design:
+                </span>{" "}
+                design system guidance and UI review
+              </>,
+              <>
+                <span className="text-ink">WSJ Product:</span> business
+                alignment and roadmap prioritization
+              </>,
+              <>
+                <span className="text-ink">WSJ Mobile Engineering:</span>{" "}
+                built the Beta feature on a tight timeline
+              </>,
+              <>
+                <span className="text-ink">Newsroom:</span> approved and
+                shaped the editorial content and track structure
+              </>,
+              <>
+                <span className="text-ink">B2C Data Analytics:</span> helped
+                analyze user engagement patterns and define Beta success
+                metrics
+              </>,
             ]}
           />
           <p>
@@ -321,11 +353,28 @@ export default function WSJChallenges() {
           </p>
           <CaseList
             items={[
-              "Quizzes — multiple-choice checks at the end of a challenge to reinforce learning",
-              "Social sharing — a shareable completion graphic to drive organic visibility",
-              "Automated task tracking — replacing the honor system as engineering capacity allows",
-              "Newsroom CMS tool — enabling editors to dynamically build and publish new tracks without engineering support",
-              "Corporate leaderboards — enterprise use cases for business subscribers to boost motivation and learning",
+              <>
+                <span className="text-ink">Quizzes:</span> multiple-choice
+                checks at the end of a challenge to reinforce learning
+              </>,
+              <>
+                <span className="text-ink">Social sharing:</span> a
+                shareable completion graphic to drive organic visibility
+              </>,
+              <>
+                <span className="text-ink">Automated task tracking:</span>{" "}
+                replacing the honor system as engineering capacity allows
+              </>,
+              <>
+                <span className="text-ink">Newsroom CMS tool:</span>{" "}
+                enabling editors to dynamically build and publish new tracks
+                without engineering support
+              </>,
+              <>
+                <span className="text-ink">Corporate leaderboards:</span>{" "}
+                enterprise use cases for business subscribers to boost
+                motivation and learning
+              </>,
             ]}
           />
           <p>

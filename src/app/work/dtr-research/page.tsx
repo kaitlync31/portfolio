@@ -139,9 +139,9 @@ export default function DTRResearch() {
             items={[
               <>
                 <span className="text-ink">
-                  Emotional Acknowledgment Chatbot
+                  Emotional Acknowledgment Chatbot:
                 </span>{" "}
-                — surfaces the norms behind a user&apos;s current approach
+                surfaces the norms behind a user&apos;s current approach
                 and offers &ldquo;what if&rdquo; inversions. When a user
                 resists an idea, the system doesn&apos;t argue or move past
                 it — it validates the resistance and asks what it&apos;s
@@ -150,9 +150,9 @@ export default function DTRResearch() {
               </>,
               <>
                 <span className="text-ink">
-                  Role-Distancing Narrative Tool
+                  Role-Distancing Narrative Tool:
                 </span>{" "}
-                — places the user in a fictional outer-space &ldquo;world&rdquo;
+                places the user in a fictional outer-space &ldquo;world&rdquo;
                 where one of their field&apos;s norms has been inverted,
                 framed as a place to visit rather than a proposal about their
                 own work. By letting users explore the idea without it
@@ -162,9 +162,9 @@ export default function DTRResearch() {
               </>,
               <>
                 <span className="text-ink">
-                  Competitive Two-Player Debate Game
+                  Competitive Two-Player Debate Game:
                 </span>{" "}
-                — two users (or a user and the AI) generate unconventional
+                two users (or a user and the AI) generate unconventional
                 ideas anonymously; one is randomly assigned as a user&apos;s
                 position to defend, detaching the idea from its original
                 author before the debate starts. This format kept users
