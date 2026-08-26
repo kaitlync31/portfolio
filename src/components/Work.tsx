@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Section from "./Section";
-import PlaceholderImage from "./PlaceholderImage";
 
 type SupportingProject = {
   number: string;
@@ -83,11 +82,14 @@ export default function Work() {
   return (
     <Section id="work" title="Work" subtitle="Products, research, and things I've built.">
       <Link href="/work/wsj-challenges" className="group block">
-        <PlaceholderImage
-          label="WSJ Challenges"
-          caption="Product walkthrough"
-          className="aspect-[16/7] w-full"
-        />
+        <div className="aspect-[16/7] w-full overflow-hidden border border-line">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/work/wsj-challenges-hero.png"
+            alt="Three WSJ Beta app screens: the Get to Know WSJ challenge entry point, the daily checklist, and the completion screen"
+            className="h-full w-full object-cover"
+          />
+        </div>
         <div className="mt-6 grid gap-6 sm:grid-cols-12">
           <div className="sm:col-span-8">
             <p className="font-sans text-xs uppercase tracking-[0.14em] text-clay">
