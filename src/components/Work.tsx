@@ -13,7 +13,7 @@ const SUPPORTING: SupportingProject[] = [
   {
     number: "02",
     title: "KNN Dashboard",
-    tags: "Product · Leadership · Execution",
+    tags: "Product · Engineering · Leadership",
     description:
       "Inherited a stalled nonprofit-data project with eight weeks left. Rebuilt how the team worked, learned a new stack, and shipped an interactive dashboard covering 21,000+ organizations.",
     href: "/work/knn-dashboard",
