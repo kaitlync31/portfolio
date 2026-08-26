@@ -27,7 +27,7 @@ export default function Coverd() {
           title="Investigating whether Gen Z would trust a gamified personal finance app enough to bet on it"
           role="Student Product Consultant"
           team="9 student consultants, partnering with Coverd's two co-founders"
-          timeline="8 weeks"
+          timeline="June 2025 – Aug 2025"
         />
 
         <CaseStudyHero
