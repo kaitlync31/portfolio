@@ -187,10 +187,38 @@ export function CaseTable({
   );
 }
 
-export function CaseStudyImage({ label, caption }: { label: string; caption: string }) {
+export function CaseStudyImage({
+  label,
+  caption,
+  src,
+  alt,
+  aspect = "aspect-[16/9]",
+}: {
+  label: string;
+  caption: string;
+  src?: string;
+  alt?: string;
+  aspect?: string;
+}) {
   return (
     <div className="mx-auto max-w-3xl px-6">
-      <PlaceholderImage label={label} caption={caption} className="aspect-[16/9] w-full" />
+      {src ? (
+        <figure>
+          <div className={`overflow-hidden border border-line ${aspect}`}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={src}
+              alt={alt ?? caption}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <figcaption className="mt-3 font-sans text-xs italic text-stone">
+            {caption}
+          </figcaption>
+        </figure>
+      ) : (
+        <PlaceholderImage label={label} caption={caption} className={`${aspect} w-full`} />
+      )}
     </div>
   );
 }

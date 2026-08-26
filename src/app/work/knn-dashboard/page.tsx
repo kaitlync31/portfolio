@@ -127,7 +127,10 @@ export default function KNNDashboard() {
 
         <CaseStudyImage
           label="KNN Dashboard"
-          caption="Interactive map, filters, and dynamic visualizations"
+          src="/work/knn-dashboard-figma.png"
+          alt="Figma design iterations of the KNN dashboard, showing early wireframes and the more refined Bluegrass Region Economic Impact layout"
+          caption="Dashboard design iterations in Figma"
+          aspect="aspect-[1234/1389]"
         />
 
         <CaseStudySection heading="The Solution">
