@@ -39,7 +39,7 @@ const SUPPORTING: SupportingProject[] = [
     title: "AI Safety Research",
     tags: "Research · NLP · ML",
     description:
-      "An intensive learning experience on machine learning models, data processing, and AI safety through assisting a PhD student in his research.",
+      "An intensive learning experience on ML models, data processing, and AI safety through assisting a PhD student in his research.",
     href: "/work/ai-safety-research",
   },
 ];
