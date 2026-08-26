@@ -32,7 +32,10 @@ export default function Coverd() {
 
         <CaseStudyHero
           label="Coverd"
+          src="/work/coverd-hero.png"
+          alt="Four Coverd app screens: a purchase-flip promo, a spend tracking dashboard, a spin-to-win game, and a group game profile screen"
           caption="Spend tracking meets games you can bet on"
+          aspect="aspect-[1462/648]"
         />
 
         <TLDR>
