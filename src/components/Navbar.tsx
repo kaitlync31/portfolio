@@ -20,16 +20,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-clay transition-colors hover:text-ink"
-            >
-              Resume ↗
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
