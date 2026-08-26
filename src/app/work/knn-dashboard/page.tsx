@@ -55,10 +55,10 @@ export default function KNNDashboard() {
             order to increase transparency, strengthen public understanding,
             and empower decision-makers. Originally, this data was stored in
             static and complex reports that were not easily accessible to the
-            public. We aimed to create a dashboard for KNN&apos;s WordPress
-            website that allows users to filter by region and explore key
-            economic, nonprofit, and subsector metrics through dynamic
-            visualizations.
+            public. Our client wanted an interactive dashboard integrated
+            into KNN&apos;s WordPress website that would allow users to
+            filter by region and explore key economic and subsector metrics
+            through dynamic visualizations.
           </p>
         </CaseStudySection>
 
@@ -143,8 +143,8 @@ export default function KNNDashboard() {
           <p>
             The plugin-based approach allows the dashboard to be easily
             embedded, maintained, and extended in the future. The frontend
-            was built as independent modules — filters, KPIs, charts, and the
-            map — coordinated by a central orchestrator through shared
+            was built as independent modules (filters, KPIs, charts, and the
+            map) coordinated by a central orchestrator through shared
             browser events, so changing a filter updates every visualization
             consistently.
           </p>
@@ -177,9 +177,11 @@ export default function KNNDashboard() {
         </CaseStudySection>
 
         <CaseStudyCredits>
-          Technical Manager: Crystal Reyes · Developers: Victoria Dynak,
-          Zimin Qian, Prince Rajodiya, Marwa Zaryab · Team Mentor: Matthew
-          Foley · Client Representative: Laura Whitaker
+          Thank you to the team, Crystal, Victoria, Zimin, Prince, Marwa,
+          and Matthew for their hard work and dedication to the project.
+          And a huge thank you to our client representative, Laura, for
+          remaining so understanding and communicative through the many
+          team and project changes.
         </CaseStudyCredits>
       </main>
       <Footer />
