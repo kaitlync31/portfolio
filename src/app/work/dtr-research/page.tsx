@@ -245,9 +245,9 @@ export default function DTRResearch() {
           bringing a fresh perspective, listening to my rants, and not being
           afraid to play devil&apos;s advocate. And I am in eternal debt to
           our research advisor, Haoqi Zhang, for creating such a welcoming
-          space for exploration, creativity, and self-confrontation in DTR.
-          I am endlessly inspired by the brilliant minds of these two
-          individuals, as well as the rest of my friends in the program.
+          space for exploration, creativity, and self-confrontation. I am
+          endlessly inspired by the brilliant minds of these two
+          individuals, as well as the rest of my friends in DTR.
         </CaseStudyCredits>
       </main>
       <Footer />
