@@ -3,7 +3,7 @@ import PlaceholderImage from "./PlaceholderImage";
 const DISCIPLINES = [
   {
     label: "Dance & choreography",
-    copy: "Seventeen years of dancing, most of them spent choreographing — building work on other people's bodies before it ever touches a stage.",
+    copy: "Seventeen years of dancing, most of them spent choreographing — experimenting with movement and creating visuals to tell stories on stage.",
   },
   {
     label: "Writing",
