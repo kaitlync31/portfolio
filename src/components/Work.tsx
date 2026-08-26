@@ -21,7 +21,7 @@ const SUPPORTING: SupportingProject[] = [
   {
     number: "03",
     title: "DTR Research",
-    tags: "HCI · Research · AI",
+    tags: "HCI · Research · Innovation",
     description:
       "Why do experts abandon disruptive ideas? Ongoing research into the emotional — not just cognitive — barriers to innovation, and three LLM-powered systems built to test the difference.",
     href: "/work/dtr-research",
