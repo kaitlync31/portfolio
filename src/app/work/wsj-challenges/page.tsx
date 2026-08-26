@@ -355,10 +355,6 @@ export default function WSJChallenges() {
           <CaseList
             items={[
               <>
-                <span className="text-ink">Quizzes:</span> multiple-choice
-                checks at the end of a challenge to reinforce learning
-              </>,
-              <>
                 <span className="text-ink">Social sharing:</span> a
                 shareable completion graphic to drive organic visibility
               </>,
