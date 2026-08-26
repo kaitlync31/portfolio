@@ -84,9 +84,22 @@ export default function WSJChallenges() {
           </p>
           <CaseList
             items={[
-              "LinkedIn's lightweight puzzles create motivation through streaks and social sharing while maintaining the platform's professional feel.",
-              "NYT's Games (Wordle, Connections) use short, repeatable formats to turn intellectual content into a sticky daily ritual.",
-              "Duolingo's gamified features and streak mechanics motivate continued engagement and make learning progress visible.",
+              <>
+                <span className="text-ink">LinkedIn&apos;s</span>{" "}
+                lightweight puzzles create motivation through streaks and
+                social sharing while maintaining the platform&apos;s
+                professional feel.
+              </>,
+              <>
+                <span className="text-ink">NYT&apos;s Games</span> (Wordle,
+                Connections) use short, repeatable formats to turn
+                intellectual content into a sticky daily ritual.
+              </>,
+              <>
+                <span className="text-ink">Duolingo&apos;s</span> gamified
+                features and streak mechanics motivate continued engagement
+                and make learning progress visible.
+              </>,
             ]}
           />
           <p>
