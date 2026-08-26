@@ -19,9 +19,12 @@ export default function Creative() {
   return (
     <section id="creative" className="scroll-mt-20 border-t border-line bg-ink py-24 text-cream">
       <div className="mx-auto max-w-5xl px-6">
-        <h2 className="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
-          Creative
-        </h2>
+        <div className="flex items-baseline justify-between">
+          <h2 className="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+            Creative
+          </h2>
+          <p className="font-sans text-xs italic text-cream/40">Coming soon</p>
+        </div>
       </div>
 
       <div className="relative mt-10 w-full">
