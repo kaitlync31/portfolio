@@ -115,11 +115,6 @@ export default function WSJChallenges() {
             Newsroom a key stakeholder in ensuring the Challenges experience
             aligned with WSJ&apos;s editorial standards and brand voice.
           </p>
-          <p className="text-ink">
-            Main business objectives: increase daily engagement and
-            long-term retention.
-          </p>
-
           <SubHeading>Who we built for</SubHeading>
           <p>
             Analyzing WSJ&apos;s subscriber segments and behaviors, I chose
