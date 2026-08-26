@@ -47,10 +47,36 @@ export function CaseStudyHeader({
   );
 }
 
-export function CaseStudyHero({ label, caption }: { label: string; caption: string }) {
+export function CaseStudyHero({
+  label,
+  caption,
+  src,
+  alt,
+}: {
+  label: string;
+  caption: string;
+  src?: string;
+  alt?: string;
+}) {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-10">
-      <PlaceholderImage label={label} caption={caption} className="aspect-[16/10] w-full" />
+      {src ? (
+        <figure>
+          <div className="overflow-hidden border border-line">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={src}
+              alt={alt ?? caption}
+              className="aspect-[16/10] w-full object-cover"
+            />
+          </div>
+          <figcaption className="mt-3 font-sans text-xs italic text-stone">
+            {caption}
+          </figcaption>
+        </figure>
+      ) : (
+        <PlaceholderImage label={label} caption={caption} className="aspect-[16/10] w-full" />
+      )}
     </div>
   );
 }
