@@ -195,6 +195,40 @@ export function CaseStudyImage({ label, caption }: { label: string; caption: str
   );
 }
 
+export function CaseStudyVideo({
+  src,
+  poster,
+  caption,
+  aspect = "aspect-[16/9]",
+}: {
+  src: string;
+  poster?: string;
+  caption?: string;
+  aspect?: string;
+}) {
+  return (
+    <div className="mx-auto max-w-3xl px-6">
+      <figure>
+        <div className={`overflow-hidden border border-line ${aspect}`}>
+          <video
+            src={src}
+            poster={poster}
+            controls
+            playsInline
+            preload="metadata"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        {caption && (
+          <figcaption className="mt-3 font-sans text-xs italic text-stone">
+            {caption}
+          </figcaption>
+        )}
+      </figure>
+    </div>
+  );
+}
+
 export function CaseStudyCredits({ children }: { children: ReactNode }) {
   return (
     <footer className="mx-auto max-w-3xl border-t border-line px-6 py-14">

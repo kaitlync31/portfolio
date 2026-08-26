@@ -6,7 +6,7 @@ import {
   CaseStudyHero,
   TLDR,
   CaseStudySection,
-  CaseStudyImage,
+  CaseStudyVideo,
   CaseList,
   CaseTable,
   SubHeading,
@@ -237,9 +237,11 @@ export default function WSJChallenges() {
           />
         </CaseStudySection>
 
-        <CaseStudyImage
-          label="Challenges — MVP flow"
+        <CaseStudyVideo
+          src="/work/wsj-challenges-mvp-flow.mp4"
+          poster="/work/wsj-challenges-mvp-flow-poster.jpg"
           caption="Entry point, floating icon, daily checklist, and completion states"
+          aspect="aspect-[1200/612]"
         />
 
         <CaseStudySection heading="My Process">
