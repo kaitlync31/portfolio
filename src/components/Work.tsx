@@ -44,11 +44,14 @@ const SUPPORTING: SupportingProject[] = [
   },
 ];
 
-const MORE_PROJECTS = [
-  "CareOn Platform",
-  "OnTask",
-  "Group Dining Recommender",
-  "Japanese Quiz Generator",
+const MORE_PROJECTS: { title: string; href?: string }[] = [
+  { title: "CareOn Platform" },
+  { title: "OnTask" },
+  {
+    title: "Group Dining Recommender",
+    href: "https://github.com/kaitlync31/group-dining-recommender",
+  },
+  { title: "Japanese Quiz Generator" },
 ];
 
 function SupportingCard({ project }: { project: SupportingProject }) {
@@ -125,17 +128,40 @@ export default function Work() {
           More projects
         </p>
         <ul className="divide-y divide-line">
-          {MORE_PROJECTS.map((title) => (
-            <li
-              key={title}
-              className="flex items-baseline justify-between gap-8 py-4 font-serif text-lg text-ink"
-            >
-              <span>{title}</span>
-              <span className="font-sans text-xs italic text-stone-light">
-                coming soon
-              </span>
-            </li>
-          ))}
+          {MORE_PROJECTS.map((project) => {
+            const content = (
+              <>
+                <span>{project.title}</span>
+                {project.href ? (
+                  <span className="font-sans text-sm text-stone transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
+                ) : (
+                  <span className="font-sans text-xs italic text-stone-light">
+                    coming soon
+                  </span>
+                )}
+              </>
+            );
+            return (
+              <li key={project.title}>
+                {project.href ? (
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-baseline justify-between gap-8 py-4 font-serif text-lg text-ink transition-colors hover:text-clay"
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <div className="flex items-baseline justify-between gap-8 py-4 font-serif text-lg text-ink">
+                    {content}
+                  </div>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </Section>
