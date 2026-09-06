@@ -40,7 +40,7 @@ export default function Creative() {
 
         <div className="mt-20 border-t border-cream/15 pt-14">
           <p className="mb-2 font-sans text-xs uppercase tracking-[0.14em] text-cream/50">
-            A selection of my work
+            A selection of my creative work
           </p>
           <div className="divide-y divide-cream/15">
             {DISCIPLINES.map((d) => {
