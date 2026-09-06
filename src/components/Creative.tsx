@@ -1,6 +1,6 @@
 const DISCIPLINES = [
   { label: "Dance & choreography" },
-  { label: "Writing" },
+  { label: "Writing", href: "https://gunnoracle.com/staff_name/kaitlyn-chen/" },
   {
     label: "Design & visual experiments",
     href: "https://goofy-pen-616.notion.site/The-Oracle-Layout-Designs-259935e69d9a80c69c7ee24f1e24cd87?pvs=143",
