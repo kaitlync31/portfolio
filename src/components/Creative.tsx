@@ -1,17 +1,4 @@
-const DISCIPLINES = [
-  {
-    label: "Dance & choreography",
-    copy: "Seventeen years of dancing, most of them spent choreographing — experimenting with movement and creating visuals to tell stories on stage.",
-  },
-  {
-    label: "Writing",
-    copy: "Started as a student journalist. Still happiest with a draft that's three revisions deep, looking for the exact right word.",
-  },
-  {
-    label: "Design & visual experiments",
-    copy: "Small, unshipped things — layout studies, typography tests, ideas that exist mostly to be looked at.",
-  },
-];
+const DISCIPLINES = ["Dance & choreography", "Writing", "Design & visual experiments"];
 
 export default function Creative() {
   return (
@@ -44,15 +31,17 @@ export default function Creative() {
           </p>
         </div>
 
-        <div className="mt-20 grid gap-x-8 gap-y-12 border-t border-cream/15 pt-14 sm:grid-cols-3">
-          {DISCIPLINES.map((d) => (
-            <div key={d.label}>
-              <p className="font-serif text-xl italic text-cream">{d.label}</p>
-              <p className="mt-3 font-sans text-sm leading-6 text-cream/60">
-                {d.copy}
+        <div className="mt-20 border-t border-cream/15 pt-14">
+          <p className="mb-8 font-sans text-xs uppercase tracking-[0.14em] text-cream/50">
+            A selection of my work
+          </p>
+          <div className="grid gap-x-8 gap-y-6 sm:grid-cols-3">
+            {DISCIPLINES.map((label) => (
+              <p key={label} className="font-serif text-xl italic text-cream">
+                {label}
               </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
