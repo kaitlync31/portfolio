@@ -51,7 +51,10 @@ const MORE_PROJECTS: { title: string; href?: string }[] = [
     title: "Group Dining Recommender",
     href: "https://github.com/kaitlync31/group-dining-recommender",
   },
-  { title: "Japanese Quiz Generator" },
+  {
+    title: "Japanese Quiz Generator",
+    href: "https://github.com/kaitlync31/japanese-quiz-app",
+  },
 ];
 
 function SupportingCard({ project }: { project: SupportingProject }) {
