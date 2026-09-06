@@ -1,4 +1,11 @@
-const DISCIPLINES = ["Dance & choreography", "Writing", "Design & visual experiments"];
+const DISCIPLINES = [
+  { label: "Dance & choreography" },
+  { label: "Writing" },
+  {
+    label: "Design & visual experiments",
+    href: "https://goofy-pen-616.notion.site/The-Oracle-Layout-Designs-259935e69d9a80c69c7ee24f1e24cd87?pvs=143",
+  },
+];
 
 export default function Creative() {
   return (
@@ -36,19 +43,33 @@ export default function Creative() {
             A selection of my work
           </p>
           <div className="divide-y divide-cream/15">
-            {DISCIPLINES.map((label) => (
-              <div
-                key={label}
-                className="group flex items-center justify-between py-6"
-              >
-                <p className="font-serif text-2xl italic text-cream transition-colors group-hover:text-cream/70">
-                  {label}
-                </p>
-                <span className="font-sans text-lg text-cream/40 transition-transform group-hover:translate-x-1">
-                  →
-                </span>
-              </div>
-            ))}
+            {DISCIPLINES.map((d) => {
+              const content = (
+                <>
+                  <p className="font-serif text-2xl italic text-cream transition-colors group-hover:text-cream/70">
+                    {d.label}
+                  </p>
+                  <span className="font-sans text-lg text-cream/40 transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
+                </>
+              );
+              return d.href ? (
+                <a
+                  key={d.label}
+                  href={d.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between py-6"
+                >
+                  {content}
+                </a>
+              ) : (
+                <div key={d.label} className="group flex items-center justify-between py-6">
+                  {content}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
