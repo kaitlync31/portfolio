@@ -1,5 +1,3 @@
-import PlaceholderImage from "./PlaceholderImage";
-
 const DISCIPLINES = [
   {
     label: "Dance & choreography",
@@ -28,10 +26,11 @@ export default function Creative() {
       </div>
 
       <div className="relative mt-10 w-full">
-        <PlaceholderImage
-          label="Dance — full bleed"
-          dark
-          className="aspect-[16/9] w-full border-none sm:aspect-[21/9]"
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/creative/dance-hero.jpg"
+          alt="Three dancers mid-performance on stage under blue lighting, including Kaitlyn Chen"
+          className="aspect-[16/9] w-full object-cover sm:aspect-[21/9]"
         />
       </div>
 
