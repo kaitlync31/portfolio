@@ -34,12 +34,13 @@ export default function Creative() {
       <div className="mx-auto max-w-5xl px-6">
         <div className="mt-12 grid gap-10 sm:grid-cols-12">
           <p className="font-serif text-3xl italic leading-tight sm:col-span-6">
-            I&apos;ve been dancing since I was three. I&apos;ve been
-            choreographing almost as long.
+            The lighting, the costumes, the choreography&hellip;
           </p>
           <p className="font-sans text-lg leading-8 text-cream/70 sm:col-span-5 sm:col-start-8">
-            I love the moment when something that only existed in my head
-            becomes real on stage.
+            Dance has always been my outlet for creative expression.
+            I&apos;ve been dancing for over seventeen years, and have
+            choreographed over 50 dances for competitive teams, high school
+            spirit weeks, and college showcases.
           </p>
         </div>
 
