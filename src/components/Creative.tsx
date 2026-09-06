@@ -1,5 +1,5 @@
 const DISCIPLINES = [
-  { label: "Dance & choreography" },
+  { label: "Dance & choreography", href: "https://youtu.be/1Tai1RReKqU" },
   { label: "Writing", href: "https://gunnoracle.com/staff_name/kaitlyn-chen/" },
   {
     label: "Design & visual experiments",
