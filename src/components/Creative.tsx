@@ -36,7 +36,7 @@ export default function Creative() {
           <p className="font-serif text-3xl italic leading-tight sm:col-span-6">
             The lighting, the costumes, the choreography&hellip;
           </p>
-          <p className="font-sans text-lg leading-8 text-cream/70 sm:col-span-5 sm:col-start-8">
+          <p className="font-sans text-lg leading-8 text-cream/70 sm:col-span-6 sm:col-start-7">
             Dance has always been my outlet for creative expression.
             I&apos;ve been dancing for over seventeen years, and have
             choreographed over 50 dances for competitive teams, high school
