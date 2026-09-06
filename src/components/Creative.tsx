@@ -32,14 +32,22 @@ export default function Creative() {
         </div>
 
         <div className="mt-20 border-t border-cream/15 pt-14">
-          <p className="mb-8 font-sans text-xs uppercase tracking-[0.14em] text-cream/50">
+          <p className="mb-2 font-sans text-xs uppercase tracking-[0.14em] text-cream/50">
             A selection of my work
           </p>
-          <div className="grid gap-x-8 gap-y-6 sm:grid-cols-3">
+          <div className="divide-y divide-cream/15">
             {DISCIPLINES.map((label) => (
-              <p key={label} className="font-serif text-xl italic text-cream">
-                {label}
-              </p>
+              <div
+                key={label}
+                className="group flex items-center justify-between py-6"
+              >
+                <p className="font-serif text-2xl italic text-cream transition-colors group-hover:text-cream/70">
+                  {label}
+                </p>
+                <span className="font-sans text-lg text-cream/40 transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
             ))}
           </div>
         </div>
