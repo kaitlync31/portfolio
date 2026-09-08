@@ -97,15 +97,17 @@ export function CaseStudySection({
   heading,
   children,
 }: {
-  heading: string;
+  heading?: string;
   children: ReactNode;
 }) {
   return (
     <section className="mx-auto max-w-3xl px-6 py-12">
-      <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.16em] text-ink">
-        {heading}
-      </h2>
-      <div className="mt-6 space-y-5 font-sans text-base leading-8 text-stone">
+      {heading && (
+        <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.16em] text-ink">
+          {heading}
+        </h2>
+      )}
+      <div className={`${heading ? "mt-6" : ""} space-y-5 font-sans text-base leading-8 text-stone`}>
         {children}
       </div>
     </section>

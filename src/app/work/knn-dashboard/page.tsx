@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Kentucky Nonprofit Network Dashboard — Kaitlyn Chen",
   description:
-    "Leading a nonprofit dashboard project end-to-end to increase accessibility to Kentucky's nonprofit economic data.",
+    "Leading a nonprofit dashboard project end-to-end to make Kentucky's nonprofit economic data more accessible.",
 };
 
 export default function KNNDashboard() {
@@ -26,8 +26,8 @@ export default function KNNDashboard() {
       <main className="flex-1">
         <CaseStudyHeader
           eyebrow="Kentucky Nonprofit Network Dashboard"
-          title="Leading a nonprofit dashboard project end-to-end to increase accessibility to Kentucky's nonprofit economic data"
-          role="Product Manager, Develop for Good"
+          title="Leading a nonprofit dashboard project end-to-end to make Kentucky's nonprofit economic data more accessible"
+          role="Product Manager + Engineer, Develop for Good"
           team="4 developers, 1 Technical Manager, 1 Team Mentor, partnering with Kentucky Nonprofit Network (KNN)"
           timeline="Oct 2025 – Feb 2026"
         />
@@ -42,87 +42,77 @@ export default function KNNDashboard() {
         </div>
 
         <TLDR>
-          Kentucky Nonprofit Network wanted to turn static economic impact
-          reports into an interactive public dashboard to empower
-          decision-makers. But halfway through the project, with 8 weeks
-          left, the team was behind schedule, morale was low, and it
-          wasn&apos;t clear if we&apos;d ship in time. I stepped in from
-          engineering into the PM role, restructured how the team worked,
-          learned a new technical stack, and stayed hands-on in both code and
-          design to get us there.
+          KNN had years of nonprofit economic data locked in static reports.
+          I helped turn that data into an interactive product — shaping the
+          story the dashboard would tell, redesigning ambiguous user flows,
+          restructuring a struggling team, and staying hands-on in the code
+          to ship the MVP on time.
         </TLDR>
 
         <CaseStudySection heading="The Problem">
           <p>
-            KNN needed a clear, accessible way to explore and communicate the
-            economic impact of nonprofit organizations across Kentucky, in
-            order to increase transparency, strengthen public understanding,
-            and empower decision-makers. Originally, this data was stored in
-            static and complex reports that were not easily accessible to the
-            public. Our client wanted an interactive dashboard integrated
-            into KNN&apos;s WordPress website that would allow users to
-            filter by region and explore key economic and subsector metrics
-            through dynamic visualizations.
-          </p>
-        </CaseStudySection>
-
-        <CaseStudySection heading="Taking Over as PM">
-          <p>
-            About halfway into the project, with 8 weeks left, our original
-            PM stepped down due to personal circumstances. I stepped in from
-            an engineering role to fill the gap, at a point where the team
-            was behind schedule and morale was low, with real uncertainty
-            about whether we&apos;d finish in time.
+            Kentucky Nonprofit Network wanted to make its nonprofit economic
+            impact data more accessible to the public and more useful to
+            advocates and policymakers.
           </p>
           <p>
-            My first priority was realigning the team on our product goals
-            and resetting how we operated. I took the lead to:
+            The underlying data showed the scale of Kentucky&apos;s
+            nonprofit sector across employment, revenue, geography, and
+            subsectors — but it lived primarily in static reports that were
+            difficult to explore.
           </p>
+          <p>
+            Our challenge wasn&apos;t simply to visualize the data. We
+            needed to decide what story the dashboard should tell and how
+            to make that story accessible to a broad audience.
+          </p>
+          <p>
+            Working with KNN&apos;s goals of advocating for the nonprofit
+            sector and informing policymakers, we centered the experience
+            around a key message:
+          </p>
+          <PullQuote>
+            Nonprofits are not just charitable organizations — they are
+            major employers and economic drivers.
+          </PullQuote>
+          <p>That shaped what we chose to emphasize:</p>
           <CaseList
             items={[
-              "Split the team into frontend/backend teams so work could run in parallel to increase the speed of development.",
-              "Reorganized our weekly syncs and added extra mid-week check-ins specifically to surface and resolve blockers faster, as the team had been losing days to blockers that sat unaddressed until the next scheduled meeting.",
-              "Re-anchored the team around why the project mattered. Morale was as much a blocker as schedule was, so I spent time reconnecting the team to the actual impact of the work (a tool that would help a nonprofit sector serving communities across the state) to motivate meeting milestones on time.",
+              "Jobs and revenue as prominent KPIs",
+              "Revenue sources and nonprofit subsectors",
+              "Geographic differences across Kentucky",
+              "Interactive exploration rather than requiring users to interpret static reports",
             ]}
           />
-          <p>
-            At the same time, I had to quickly become fluent in a stack
-            I&apos;d never worked with before: custom WordPress plugin
-            architecture. I couldn&apos;t credibly make scope and technical
-            tradeoff calls, or unblock the team, without understanding the
-            constraints of the platform we were building on. AI tools and
-            YouTube videos proved incredibly handy here in quickly explaining
-            concepts and answering any questions that came up.
-          </p>
         </CaseStudySection>
 
-        <CaseStudySection heading="Staying Hands-On">
+        <CaseStudySection heading="Designing the Experience">
+          <SubHeading>Turning data into a story</SubHeading>
           <p>
-            Because I&apos;d started as an engineer on this project, I made a
-            deliberate choice not to fully step back from the code once I
-            became PM. I set up the plugin&apos;s base architecture and
-            template code early on, so the rest of the team had a consistent
-            pattern to build against, and I picked up implementation work
-            myself when teammates were blocked or short on time. I also
-            stayed closely involved in design during the earlier phases of
-            the project, working with the team through the Figma wireframes
-            and iterations before development ramped up.
+            I worked with the team to determine which data points were most
+            important to surface and how they should be represented.
           </p>
           <p>
-            This multi-faceted role required more time and context-switching,
-            but it meant I could unblock technical and design decisions
-            immediately instead of routing them through someone else, which
-            mattered a lot with our tight deadline.
+            We used large KPI numbers for the most important statistics,
+            charts for deeper exploration, and an interactive map to make
+            the geographic dimension of the data immediately accessible.
+          </p>
+          <p>
+            KNN initially preferred using pie charts wherever possible, so
+            we incorporated those where they communicated the data
+            effectively while also using stacked bar charts for comparisons
+            that benefited from showing composition across categories.
           </p>
 
-          <SubHeading>Key tradeoff decisions</SubHeading>
-          <CaseList
-            items={[
-              "Cut print export from MVP scope. KNN specifically wanted a way to export dashboard views for print, but it wasn't feasible in the remaining timeline. Rather than dropping it silently, I made sure we delivered documentation for future implementation so KNN's team (or a future Develop for Good cohort) could pick it up.",
-              "Parallelized frontend/backend work over sequential handoffs. Faster, but required tighter coordination and more frequent syncs to keep both sides consistent, which is part of why I added the mid-week blocker meetings.",
-              "Prioritized shipping a working, polished MVP over expanding feature scope. With morale and schedule both at risk, I chose to protect quality and completion of the core experience (map, filters, KPIs, dynamic visualizations) over adding anything new.",
-            ]}
-          />
+          <SubHeading>Designing within KNN&apos;s brand</SubHeading>
+          <p>
+            We also had to work within KNN&apos;s existing visual identity,
+            which uses five bright colors rather than a single dominant
+            accent color. This created challenges around hierarchy and
+            readability, so I experimented with gradients, shading, and
+            variations in color intensity to establish clearer visual
+            relationships without departing from the existing brand.
+          </p>
         </CaseStudySection>
 
         <CaseStudyImage
@@ -133,53 +123,172 @@ export default function KNNDashboard() {
           aspect="aspect-[1234/1389]"
         />
 
-        <CaseStudySection heading="The Solution">
+        <CaseStudySection>
+          <SubHeading>Resolving an ambiguous filtering experience</SubHeading>
           <p>
-            The final product is an interactive dashboard, embedded directly
-            into KNN&apos;s WordPress site via a custom plugin, that lets
-            users:
+            One of the most important design decisions came from the
+            geographic filters.
           </p>
+          <p>
+            The initial design proposed two separate dropdowns: one for
+            counties and one for Local Workforce Areas (LWAs). While
+            walking through the user flow, I realized this could be
+            confusing because LWAs consist of multiple counties. If a user
+            selected an LWA and a county independently, it wasn&apos;t
+            obvious which selection should take precedence.
+          </p>
+          <p>
+            I raised the issue with the team and client and explored
+            several alternatives, including removing one filter entirely
+            and creating a hierarchical system.
+          </p>
+          <p>We ultimately chose a hierarchical filter:</p>
+          <p className="text-ink">
+            Selecting an LWA automatically selects its corresponding
+            counties, while users can still deselect individual counties.
+          </p>
+          <p>
+            This preserved the flexibility of county-level exploration
+            while giving users a clearer mental model of how the geographic
+            hierarchy worked.
+          </p>
+        </CaseStudySection>
+
+        <CaseStudySection heading="Taking Over as PM">
+          <p>
+            About halfway through the project, with 8 weeks remaining, our
+            original PM stepped down due to personal circumstances. I
+            stepped in from an engineering role at a point when the team
+            was behind schedule, morale was low, and there was real
+            uncertainty about whether we&apos;d ship.
+          </p>
+          <p>
+            My first priority was to change how the team worked, rather
+            than simply asking everyone to work faster.
+          </p>
+
+          <SubHeading>Restructuring the team</SubHeading>
+          <p>
+            I split the engineering team into frontend and backend tracks
+            so work could happen in parallel rather than through sequential
+            handoffs.
+          </p>
+          <p>
+            I also reorganized our weekly syncs and added mid-week
+            check-ins specifically focused on blockers. Previously,
+            blockers could sit unresolved until the next scheduled meeting,
+            costing us valuable development time.
+          </p>
+
+          <SubHeading>Protecting the scope</SubHeading>
+          <p>
+            With eight weeks left, we couldn&apos;t build everything
+            originally envisioned.
+          </p>
+          <p>
+            I prioritized the core experience — map, filters, KPIs, and
+            dynamic visualizations — and cut the print/export functionality
+            from the MVP.
+          </p>
+          <p>
+            Rather than abandoning it entirely, I worked through a
+            technical approach for the future implementation and
+            documented it for KNN and future teams.
+          </p>
+          <p>
+            This let us protect the quality and completeness of the core
+            product while still preserving a path toward the client&apos;s
+            longer-term vision.
+          </p>
+
+          <SubHeading>Staying hands-on</SubHeading>
+          <p>
+            I also chose not to completely step away from engineering after
+            becoming PM.
+          </p>
+          <p>
+            Because I understood the codebase and technical constraints, I
+            could make product and scope decisions with a better
+            understanding of what was actually feasible. I set up the
+            plugin&apos;s initial architecture and template code, continued
+            contributing implementation work, and stepped in when teammates
+            were blocked or short on time.
+          </p>
+          <p>
+            At the same time, I stayed involved in the earlier design
+            process, working through Figma iterations and translating the
+            design into the eventual implementation.
+          </p>
+        </CaseStudySection>
+
+        <CaseStudySection heading="Engineering the Dashboard">
+          <p>
+            The final dashboard was delivered as a custom WordPress plugin
+            rather than a collection of standalone web files.
+          </p>
+          <p>
+            I developed the architecture using PHP, JavaScript, CSS, MySQL,
+            Leaflet.js, and Chart.js.
+          </p>
+          <p>The frontend was organized into independent modules for:</p>
           <CaseList
             items={[
-              "Filter economic and nonprofit data by region using an interactive map (Leaflet.js)",
-              "Explore dynamic visualizations of economic, nonprofit, and subsector metrics (Chart.js)",
-              "Apply multi-select filters to narrow in on the specific data they care about",
-              "Pull from a backend built on custom MySQL tables and a PHP-driven API, with frontend assets conditionally loaded only when the dashboard is present, to keep the rest of KNN's site fast.",
+              "Interactive map",
+              "Filters",
+              "KPIs",
+              "Charts",
+              "Subsector visualizations",
             ]}
           />
           <p>
-            The plugin-based approach allows the dashboard to be easily
-            embedded, maintained, and extended in the future. The frontend
-            was built as independent modules (filters, KPIs, charts, and the
-            map) coordinated by a central orchestrator through shared
-            browser events, so changing a filter updates every visualization
-            consistently.
+            A central dashboard orchestrator coordinated these modules
+            through shared data and browser events. When a user changed a
+            filter, the relevant event propagated to the map and
+            visualizations so the entire dashboard stayed synchronized.
           </p>
-          <p className="font-sans text-sm text-stone-light">
-            Tech stack: PHP, JavaScript, HTML, CSS, MySQL, Chart.js,
-            Leaflet.js, Figma, GitHub, WordPress
+          <p>
+            I also handled the less-visible work required to get the
+            product from local development to a real WordPress environment,
+            including:
+          </p>
+          <CaseList
+            items={[
+              "Asset loading and paths",
+              "WordPress/PHP compatibility",
+              "JavaScript loading order",
+              "Caching and minification issues",
+              "Data normalization",
+              "Responsive styling",
+              "Production debugging",
+              "Plugin packaging and handoff",
+            ]}
+          />
+          <p>
+            The final plugin was packaged for deployment and the codebase
+            was made available through GitHub.
           </p>
         </CaseStudySection>
 
         <CaseStudySection heading="Outcome">
           <p>
-            The dashboard shipped live on KNN&apos;s WordPress site, giving
-            the public a way to explore the economic impact of over 21,000
-            nonprofit organizations across Kentucky by region for the first
-            time. Long-term usage metrics aren&apos;t available yet, but the
-            tool fulfilled a multi-year goal for KNN and gives policymakers,
-            researchers, and community members direct access to data that
-            was previously locked in static reports.
+            The dashboard launched live on KNN&apos;s WordPress site, giving
+            the public an interactive way to explore the economic impact of
+            21,000+ nonprofit organizations across Kentucky by region.
+          </p>
+          <p className="font-serif text-2xl italic text-clay">
+            1,100+ visits since launch
+          </p>
+          <p>
+            More importantly, the project turned a multi-year vision for
+            KNN&apos;s More Than Charity initiative into a working public
+            product that gives policymakers, researchers, nonprofit
+            leaders, and community members a more accessible way to engage
+            with the data.
           </p>
           <PullQuote attribution="Laura Whitaker, Associate Director, KNN">
-            It&apos;s been a dream of ours for several years to build out our
-            More Than Charity data project and make it more interactive for
-            folks to delve into data at a local and regional level. A
-            project like this was simply not doable within our budget, yet
-            we knew this tool could help nonprofit leaders share about the
-            economic impact of the nonprofit sector, ultimately benefitting
-            the communities they serve. Working with Develop for Good has
-            allowed us to bring our vision to life.
+            It&apos;s been a dream of ours for several years to build out
+            our More Than Charity data project and make it more interactive
+            for folks to delve into data at a local and regional level.
           </PullQuote>
         </CaseStudySection>
 
