@@ -45,8 +45,8 @@ export default function DTRResearch() {
           In DTR, students independently own their research projects, from
           problem framing and research direction to system design,
           experimentation, and writing. I started this project alone,
-          treating innovation as a <strong>cognitive problem</strong>:
-          experts become so familiar with their field&apos;s norms and
+          treating innovation as a cognitive problem: experts become so
+          familiar with their field&apos;s norms and
           assumptions that they struggle to see beyond them.
         </TLDR>
 
@@ -55,11 +55,8 @@ export default function DTRResearch() {
             I built an LLM-powered workflow to help experts surface and
             challenge those assumptions. But after my research partner
             joined and we began testing with real experts, we found
-            something unexpected:{" "}
-            <strong className="text-ink">
-              the problem wasn&apos;t just generating disruptive ideas. It
-              was being willing to stay with them.
-            </strong>
+            something unexpected: the problem wasn&apos;t just generating
+            disruptive ideas. It was being willing to stay with them.
           </p>
           <p>
             Experts could engage with unconventional ideas, but often
@@ -67,17 +64,12 @@ export default function DTRResearch() {
             failure, loneliness, and threats to professional identity.
             That finding shifted the direction of the project from helping
             experts <em className="text-ink">generate</em> novel ideas to
-            helping them{" "}
-            <strong className="text-ink">
-              feel safe enough to seriously explore them.
-            </strong>
+            helping them feel safe enough to seriously explore them.
           </p>
           <p>
             We designed and tested three AI-powered systems exploring
-            different ways to overcome that barrier:{" "}
-            <strong className="text-ink">
-              emotional acknowledgment, role-distancing, and competition.
-            </strong>
+            different ways to overcome that barrier: emotional
+            acknowledgment, role-distancing, and competition.
           </p>
         </CaseStudySection>
 
@@ -90,20 +82,18 @@ export default function DTRResearch() {
             difficult to see or take seriously.
           </p>
           <p>
-            Existing approaches to innovation largely treat this as a{" "}
-            <strong className="text-ink">cognitive problem</strong>: give
-            experts new frameworks, prompts, or ideation techniques, and
+            Existing approaches to innovation largely treat this as a
+            cognitive problem: give experts new frameworks, prompts, or
+            ideation techniques, and
             they should be able to break from convention.
           </p>
           <p>I started with the same assumption.</p>
           <p>
             But disruptive innovation requires more than generating a
             novel idea. It can require temporarily stepping outside a
-            professional identity built over years.{" "}
-            <strong className="text-ink">
-              What happens when the barrier isn&apos;t a lack of ideas, but
-              the emotional difficulty of taking those ideas seriously?
-            </strong>
+            professional identity built over years. What happens when the
+            barrier isn&apos;t a lack of ideas, but the emotional
+            difficulty of taking those ideas seriously?
           </p>
           <p>That became the question driving the second phase of my research:</p>
           <PullQuote>
@@ -152,8 +142,7 @@ export default function DTRResearch() {
           <p>
             The result gave me preliminary evidence that structured AI
             could expand the space of ideas. But I hadn&apos;t yet tested
-            whether experts would actually{" "}
-            <strong className="text-ink">pursue</strong> those ideas.
+            whether experts would actually pursue those ideas.
           </p>
         </CaseStudySection>
 
@@ -203,9 +192,8 @@ export default function DTRResearch() {
             was being willing to stay with them.
           </p>
           <p>
-            We reframed our approach around an{" "}
-            <strong className="text-ink">emotion-first</strong> question:
-            how might AI help experts temporarily separate an idea from
+            We reframed our approach around an emotion-first question: how
+            might AI help experts temporarily separate an idea from
             their professional identity, making it safer to explore?
           </p>
         </CaseStudySection>
@@ -297,29 +285,20 @@ export default function DTRResearch() {
             thinking for them.
           </p>
           <p>
-            The debate successfully supported{" "}
-            <strong className="text-ink">
-              novelty and articulation of novelty
-            </strong>
-            , although we found less evidence of continued action after
-            the session.
+            The debate successfully supported novelty and articulation of
+            novelty, although we found less evidence of continued action
+            after the session.
           </p>
         </CaseStudySection>
 
         <CaseStudySection heading="How We Tested">
           <p>
-            We conducted{" "}
-            <strong className="text-ink">
-              15+ user interviews and usability tests
-            </strong>{" "}
-            across the three prototypes, primarily with CS education
-            professors.
+            We conducted 15+ user interviews and usability tests across
+            the three prototypes, primarily with CS education professors.
           </p>
           <p>
-            Each session consisted of roughly{" "}
-            <strong className="text-ink">
-              40–45 minutes of interaction followed by 15 minutes of Q&amp;A.
-            </strong>
+            Each session consisted of roughly 40–45 minutes of interaction
+            followed by 15 minutes of Q&amp;A.
           </p>
           <p>We evaluated each prototype against three outcomes:</p>
           <CaseList
@@ -342,11 +321,9 @@ export default function DTRResearch() {
             ]}
           />
           <p>
-            These criteria helped us distinguish between{" "}
-            <strong className="text-ink">
-              generating an interesting idea
-            </strong>{" "}
-            and actually engaging with it deeply enough to matter.
+            These criteria helped us distinguish between generating an
+            interesting idea and actually engaging with it deeply enough
+            to matter.
           </p>
         </CaseStudySection>
 
@@ -366,11 +343,8 @@ export default function DTRResearch() {
             of identity, fear, and uncertainty.
           </p>
           <p>
-            This led us toward an{" "}
-            <strong className="text-ink">
-              emotion-first framework for AI-assisted innovation
-            </strong>
-            :
+            This led us toward an emotion-first framework for AI-assisted
+            innovation:
           </p>
           <p className="text-ink">Acknowledge → Distance → Invest</p>
           <div className="space-y-4">
@@ -415,10 +389,8 @@ export default function DTRResearch() {
         <CaseStudySection heading="Outcome &amp; What's Next">
           <p>
             By June, we&apos;d co-authored a first draft of a paper
-            proposing an{" "}
-            <strong className="text-ink">
-              emotion-first framework for AI-assisted innovation tools.
-            </strong>
+            proposing an emotion-first framework for AI-assisted
+            innovation tools.
           </p>
           <p>
             I&apos;m continuing the project by exploring how the three
@@ -446,11 +418,8 @@ export default function DTRResearch() {
           <p>
             Early on, I focused heavily on whether the system could
             generate novel ideas. Over time, I learned to distinguish
-            between{" "}
-            <strong className="text-ink">
-              generating an idea, recognizing its value, and actually
-              continuing to pursue it.
-            </strong>
+            between generating an idea, recognizing its value, and
+            actually continuing to pursue it.
           </p>
 
           <SubHeading>
