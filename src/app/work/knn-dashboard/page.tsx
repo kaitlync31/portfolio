@@ -36,7 +36,7 @@ export default function KNNDashboard() {
           <CaseStudyVideo
             src="/work/knn-dashboard-demo.mp4"
             poster="/work/knn-dashboard-demo-poster.jpg"
-            caption="Interactive dashboard embedded in KNN's WordPress site"
+            caption="Final product demo"
             aspect="aspect-[1200/706]"
           />
         </div>
