@@ -41,6 +41,25 @@ export default function KNNDashboard() {
           />
         </div>
 
+        <div className="mx-auto flex max-w-3xl flex-wrap gap-x-6 gap-y-2 px-6 pt-6 font-sans text-sm">
+          <a
+            href="https://kynonprofits.org/mtcdashboard/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ink transition-colors hover:text-clay"
+          >
+            View live dashboard →
+          </a>
+          <a
+            href="https://github.com/kaitlync31/dfg-dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ink transition-colors hover:text-clay"
+          >
+            View on GitHub →
+          </a>
+        </div>
+
         <TLDR>
           KNN had years of nonprofit economic data locked in static reports.
           I helped turn that data into an interactive product, shaping the
