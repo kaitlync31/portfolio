@@ -43,10 +43,10 @@ export default function KNNDashboard() {
 
         <TLDR>
           KNN had years of nonprofit economic data locked in static reports.
-          I helped turn that data into an interactive product — shaping the
-          story the dashboard would tell, redesigning ambiguous user flows,
-          restructuring a struggling team, and staying hands-on in the code
-          to ship the MVP on time.
+          I helped turn that data into an interactive product, shaping the
+          story the dashboard would tell, designing user flows, restructuring
+          a struggling team, and staying hands-on in the code to ship the
+          MVP on time.
         </TLDR>
 
         <CaseStudySection heading="The Problem">
@@ -58,7 +58,7 @@ export default function KNNDashboard() {
           <p>
             The underlying data showed the scale of Kentucky&apos;s
             nonprofit sector across employment, revenue, geography, and
-            subsectors — but it lived primarily in static reports that were
+            subsectors, but it lived primarily in static reports that were
             difficult to explore.
           </p>
           <p>
@@ -72,7 +72,7 @@ export default function KNNDashboard() {
             around a key message:
           </p>
           <PullQuote>
-            Nonprofits are not just charitable organizations — they are
+            Nonprofits are not just charitable organizations: they are
             major employers and economic drivers.
           </PullQuote>
           <p>That shaped what we chose to emphasize:</p>
@@ -143,10 +143,10 @@ export default function KNNDashboard() {
             and creating a hierarchical system.
           </p>
           <p>We ultimately chose a hierarchical filter:</p>
-          <p className="text-ink">
+          <PullQuote>
             Selecting an LWA automatically selects its corresponding
             counties, while users can still deselect individual counties.
-          </p>
+          </PullQuote>
           <p>
             This preserved the flexibility of county-level exploration
             while giving users a clearer mental model of how the geographic
@@ -186,8 +186,8 @@ export default function KNNDashboard() {
             originally envisioned.
           </p>
           <p>
-            I prioritized the core experience — map, filters, KPIs, and
-            dynamic visualizations — and cut the print/export functionality
+            I prioritized the core experience: map, filters, KPIs, and
+            dynamic visualizations. I cut the print/export functionality
             from the MVP.
           </p>
           <p>
