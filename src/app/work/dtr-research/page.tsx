@@ -8,14 +8,16 @@ import {
   CaseStudySection,
   CaseStudyImage,
   CaseList,
+  CaseTable,
   SubHeading,
+  PullQuote,
   CaseStudyCredits,
 } from "@/components/CaseStudy";
 
 export const metadata: Metadata = {
   title: "DTR Research — Kaitlyn Chen",
   description:
-    "Understanding the cognitive and emotional barriers that prevent experts from pursuing disruptive innovations.",
+    "How can AI help experts challenge deeply held assumptions and pursue ideas that disrupt their field?",
 };
 
 export default function DTRResearch() {
@@ -25,9 +27,9 @@ export default function DTRResearch() {
       <main className="flex-1">
         <CaseStudyHeader
           eyebrow="DTR Research"
-          title="Understanding the cognitive and emotional barriers that prevent experts from pursuing disruptive innovations, and designing AI-powered tools to help overcome them"
+          title="How can AI help experts challenge deeply held assumptions and pursue ideas that disrupt their field?"
           role="Student Researcher, Design, Technology, and Research (DTR) Lab @ Northwestern University"
-          team="Me & one research partner, plus the DTR community"
+          team="Me + one research partner, with support from the DTR community"
           timeline="Jan 2026 – present"
         />
 
@@ -40,91 +42,200 @@ export default function DTRResearch() {
         />
 
         <TLDR>
-          In DTR, every aspect of a student&apos;s research project — problem
-          framing, research direction, system design, experiments, and
-          report-writing — is completely self-directed. I started this
-          project alone, treating it as a cognitive problem. My research
-          partner and I later found the barrier wasn&apos;t just cognitive,
-          but deeply emotional. We built and tested three gamified,
-          LLM-powered systems and are working on a paper proposing an
-          &ldquo;emotion-first&rdquo; framework for AI-assisted innovation
-          tools.
+          In DTR, students independently own their research projects, from
+          problem framing and research direction to system design,
+          experimentation, and writing. I started this project alone,
+          treating innovation as a <strong>cognitive problem</strong>:
+          experts become so familiar with their field&apos;s norms and
+          assumptions that they struggle to see beyond them.
         </TLDR>
 
-        <CaseStudySection heading="The Problem">
+        <CaseStudySection>
           <p>
-            Experts that work in a field for an extended amount of time gain
-            a deep understanding of the field and how to solve problems
-            within it. As they gain more expertise, the values, norms, and
-            existing approaches established within the field govern how they
-            solve these problems. Although this is useful for some problems,
-            others — the ones that require an approach significantly
-            deviating from standard field approaches — remain perpetually
-            unsolved. Solving them requires experts to innovate disruptively
-            within their field. But it&apos;s difficult to disrupt a
-            worldview and professional identity that has been defined by the
-            values of that same field.
+            I built an LLM-powered workflow to help experts surface and
+            challenge those assumptions. But after my research partner
+            joined and we began testing with real experts, we found
+            something unexpected:{" "}
+            <strong className="text-ink">
+              the problem wasn&apos;t just generating disruptive ideas. It
+              was being willing to stay with them.
+            </strong>
           </p>
           <p>
-            Existing approaches to supporting innovation have largely focused
-            on the cognitive dimension of this challenge: providing experts
-            with new frameworks, prompts, or structured exercises designed to
-            help them generate ideas outside their established mental
-            models. Brainstorming methods, design thinking workshops, and
-            ideation tools assume that if experts are simply given the right
-            cognitive scaffolding, they&apos;ll be able to break from
-            convention.
+            Experts could engage with unconventional ideas, but often
+            retreated toward familiar approaches because of fear of
+            failure, loneliness, and threats to professional identity.
+            That finding shifted the direction of the project from helping
+            experts <em className="text-ink">generate</em> novel ideas to
+            helping them{" "}
+            <strong className="text-ink">
+              feel safe enough to seriously explore them.
+            </strong>
           </p>
           <p>
-            These approaches largely overlook a more fundamental barrier:
-            disruptive innovation often requires experts to temporarily set
-            aside a professional identity built over years of interaction
-            with their field — and that identity shift is emotionally, not
-            just cognitively, difficult. Stepping into unconventional ideas
-            can surface fear of failure and loneliness. Recent work in
-            gamification and playful systems suggests that a low-stakes space
-            to try on new identities and take risks — without the emotional
-            weight those actions would carry in real-world contexts — could
-            help initiate that shift.
+            We designed and tested three AI-powered systems exploring
+            different ways to overcome that barrier:{" "}
+            <strong className="text-ink">
+              emotional acknowledgment, role-distancing, and competition.
+            </strong>
           </p>
         </CaseStudySection>
 
-        <CaseStudySection heading="How the Direction Evolved">
-          <SubHeading>Quarter 1 (solo)</SubHeading>
+        <CaseStudySection heading="The Problem">
           <p>
-            I framed the problem cognitively. My working hypothesis was that
-            experts are constrained by field norms they&apos;ve internalized
-            so deeply they don&apos;t recognize them as assumptions. I
-            designed and built an early version of a chatbot that would
-            surface the norms underlying an expert&apos;s approach to a
-            problem and challenge them with &ldquo;what if&rdquo; inversions,
-            one at a time.
+            Experts develop deep mental models of how their field works:
+            its values, norms, assumptions, and accepted approaches. These
+            mental models make them effective at solving problems within
+            the field, but can also make radically different approaches
+            difficult to see or take seriously.
+          </p>
+          <p>
+            Existing approaches to innovation largely treat this as a{" "}
+            <strong className="text-ink">cognitive problem</strong>: give
+            experts new frameworks, prompts, or ideation techniques, and
+            they should be able to break from convention.
+          </p>
+          <p>I started with the same assumption.</p>
+          <p>
+            But disruptive innovation requires more than generating a
+            novel idea. It can require temporarily stepping outside a
+            professional identity built over years.{" "}
+            <strong className="text-ink">
+              What happens when the barrier isn&apos;t a lack of ideas, but
+              the emotional difficulty of taking those ideas seriously?
+            </strong>
+          </p>
+          <p>That became the question driving the second phase of my research:</p>
+          <PullQuote>
+            How can AI create the conditions that help experts stay with a
+            disruptive idea long enough to discover whether it has value?
+          </PullQuote>
+        </CaseStudySection>
+
+        <CaseStudySection heading="How the Direction Evolved">
+          <SubHeading>Quarter 1 — Cognitive barriers</SubHeading>
+          <p>
+            I initially hypothesized that experts struggle to innovate
+            because they don&apos;t recognize the norms constraining their
+            thinking.
+          </p>
+          <p>I designed an LLM workflow that guided users through:</p>
+          <p className="text-ink">
+            Problem → Existing approaches → Field norms → Legitimacy
+            criteria → Challenge norms → Generate alternatives
+          </p>
+          <p>
+            Rather than simply asking an LLM for ideas, the system helped
+            users identify the assumptions behind their field&apos;s
+            existing approaches and explore what might happen if those
+            assumptions were challenged.
+          </p>
+          <p>
+            I ran a preliminary self-study on a persistent CS education
+            problem: increasing students&apos; use of AI to complete
+            programming assignments.
+          </p>
+          <p>In roughly the same one-hour period:</p>
+          <CaseTable
+            columns={["Condition", "Approaches", "Norms", "Legitimacy Criteria", "Solutions"]}
+            rows={[
+              ["Without AI", "3", "2", "1", "2"],
+              ["With structured LLM workflow", "5", "5", "6", "5"],
+            ]}
+          />
+          <p>
+            The LLM-supported process produced greater breadth and depth of
+            exploration. It also surfaced perspectives I hadn&apos;t
+            considered myself, such as equitable access as a criterion for
+            evaluating potential solutions.
+          </p>
+          <p>
+            The result gave me preliminary evidence that structured AI
+            could expand the space of ideas. But I hadn&apos;t yet tested
+            whether experts would actually{" "}
+            <strong className="text-ink">pursue</strong> those ideas.
+          </p>
+        </CaseStudySection>
+
+        <CaseStudySection heading="The Pivot">
+          <p>
+            Once my research partner joined in Quarter 2, we began
+            conducting interviews and usability tests with CS education
+            professors.
+          </p>
+          <p>
+            The cognitive intervention seemed to work: professors described
+            genuinely new ideas surfacing during the sessions.
+          </p>
+          <p>But we noticed a consistent pattern:</p>
+          <PullQuote>
+            Experts would engage with a disruptive idea, then retreat
+            toward something closer to their existing approach.
+          </PullQuote>
+          <p>
+            Through interviews and observation, we identified emotional
+            and identity-related barriers that our original framing
+            didn&apos;t address:
+          </p>
+          <CaseList
+            items={[
+              <>
+                <span className="text-ink">Identity:</span> Challenging a
+                field&apos;s assumptions can feel like challenging part of
+                one&apos;s professional identity.
+              </>,
+              <>
+                <span className="text-ink">Fear of loneliness:</span> A
+                genuinely disruptive idea can feel isolating when no one
+                else in the field seems to share it.
+              </>,
+              <>
+                <span className="text-ink">Fear of failure:</span> Taking
+                an unconventional idea seriously creates the possibility
+                of being visibly wrong or exposing gaps in one&apos;s own
+                expertise.
+              </>,
+            ]}
+          />
+          <p>This became the turning point of the project.</p>
+          <p className="text-ink">
+            The problem wasn&apos;t just generating disruptive ideas. It
+            was being willing to stay with them.
+          </p>
+          <p>
+            We reframed our approach around an{" "}
+            <strong className="text-ink">emotion-first</strong> question:
+            how might AI help experts temporarily separate an idea from
+            their professional identity, making it safer to explore?
+          </p>
+        </CaseStudySection>
+
+        <CaseStudySection heading="Three Design Experiments">
+          <p>
+            We built three prototypes, each testing a different mechanism
+            for reducing emotional or identity-related resistance.
           </p>
 
-          <SubHeading>Quarter 2 (with my research partner)</SubHeading>
+          <SubHeading>01 — Emotional Acknowledgment</SubHeading>
           <p>
-            Once my partner joined, we started running real interviews and
-            usability tests with CS education professors, and the picture
-            became more complicated. The cognitive challenging worked
-            (professors described genuinely new ideas surfacing), but we
-            noticed a consistent pattern: experts would engage with a
-            disruptive idea, then quickly retreat to something closer to
-            their existing approach. Through interviews, we traced this to
-            something the cognitive framing wasn&apos;t addressing at all:
-            fear of failure (engaging seriously might expose gaps in their
-            own expertise) and fear of loneliness (feeling like the only
-            person in their field who&apos;d consider this). Emotional
-            stakes, not lack of ideas, were what ultimately made experts
-            abandon disruptive directions.
+            <span className="text-ink">Hypothesis:</span> Recognizing
+            emotional resistance could help experts feel safer challenging
+            their worldview.
           </p>
           <p>
-            This was the pivot point for the whole project: we reframed our
-            approach around the idea that emotional support has to precede
-            cognitive intervention, not run alongside it as an afterthought.
-            A tool that only challenges norms cognitively will get initial
-            engagement, but won&apos;t get experts to actually stick with an
-            idea long enough to find its value.
+            The chatbot still surfaced field norms and offered &ldquo;what
+            if&rdquo; inversions. But when users resisted an idea, the
+            system didn&apos;t simply push forward. It acknowledged the
+            resistance and asked what might be behind it.
           </p>
+          <p>
+            <span className="text-ink">Finding:</span> Cognitive
+            challenging could surface new ideas, but emotional
+            acknowledgment alone wasn&apos;t enough to consistently make
+            users pursue genuinely disruptive directions.
+          </p>
+
+          <SubHeading>02 — Out There</SubHeading>
         </CaseStudySection>
 
         <CaseStudyImage
@@ -135,125 +246,232 @@ export default function DTRResearch() {
           aspect="aspect-[2294/1584]"
         />
 
-        <CaseStudySection heading="The Solution">
+        <CaseStudySection>
           <p>
-            Based on that reframe, we designed and built three subsystems,
-            each targeting the emotional/identity barrier a different way,
-            and tested each with real users:
+            <span className="text-ink">Hypothesis:</span> If an
+            unconventional idea felt like something to explore rather than
+            something the expert personally believed, they might be more
+            willing to take it seriously.
           </p>
+          <p>
+            <em className="text-ink">Out There</em> placed users in a
+            fictional outer-space world where each planet represented an
+            inversion of one of their field&apos;s norms.
+          </p>
+          <p>
+            The fictional framing created distance between the user and
+            the idea.
+          </p>
+          <p>
+            <span className="text-ink">Finding:</span> Role-distancing
+            helped users stick with ideas they would normally dismiss. One
+            professor felt less concerned about whether an idea would work
+            because it belonged to a fictional world rather than being a
+            direct proposal about his own work.
+          </p>
+          <p>
+            But identity and professional authority remained barriers to
+            actually adopting the ideas.
+          </p>
+
+          <SubHeading>03 — Competitive Debate</SubHeading>
+          <p>
+            <span className="text-ink">Hypothesis:</span> Defending an
+            idea, even one you didn&apos;t choose, could motivate experts
+            to engage with its substance rather than immediately reject
+            it.
+          </p>
+          <p>
+            Our third prototype turned innovation into a two-player
+            debate. Participants generated unconventional ideas and were
+            then randomly assigned a position to defend, meaning they
+            might have to argue for an idea they hadn&apos;t originally
+            proposed.
+          </p>
+          <p>
+            <span className="text-ink">Finding:</span> Competition made
+            the interaction more engaging and encouraged participants to
+            keep thinking about the idea. Because participants had to
+            construct the arguments themselves, the format also preserved
+            human agency rather than having the LLM do the innovative
+            thinking for them.
+          </p>
+          <p>
+            The debate successfully supported{" "}
+            <strong className="text-ink">
+              novelty and articulation of novelty
+            </strong>
+            , although we found less evidence of continued action after
+            the session.
+          </p>
+        </CaseStudySection>
+
+        <CaseStudySection heading="How We Tested">
+          <p>
+            We conducted{" "}
+            <strong className="text-ink">
+              15+ user interviews and usability tests
+            </strong>{" "}
+            across the three prototypes, primarily with CS education
+            professors.
+          </p>
+          <p>
+            Each session consisted of roughly{" "}
+            <strong className="text-ink">
+              40–45 minutes of interaction followed by 15 minutes of Q&amp;A.
+            </strong>
+          </p>
+          <p>We evaluated each prototype against three outcomes:</p>
           <CaseList
             items={[
               <>
-                <span className="text-ink">
-                  Emotional Acknowledgment Chatbot:
-                </span>{" "}
-                surfaces the norms behind a user&apos;s current approach
-                and offers &ldquo;what if&rdquo; inversions. When a user
-                resists an idea, the system doesn&apos;t argue or move past
-                it — it validates the resistance and asks what it&apos;s
-                protecting, reframing dismissal as a signal worth examining
-                rather than an obstacle to route around.
+                <span className="text-ink">Novelty:</span> Did the expert
+                reach an idea or approach that neither they nor others in
+                their field had previously considered?
               </>,
               <>
-                <span className="text-ink">
-                  Role-Distancing Narrative Tool:
-                </span>{" "}
-                places the user in a fictional outer-space &ldquo;world&rdquo;
-                where one of their field&apos;s norms has been inverted,
-                framed as a place to visit rather than a proposal about their
-                own work. By letting users explore the idea without it
-                threatening their identity, this format got users to
-                seriously consider ideas they&apos;d otherwise dismiss
-                immediately.
+                <span className="text-ink">Articulation of Novelty:</span>{" "}
+                Could they explain why the new idea solved the problem
+                differently or better than existing approaches?
               </>,
               <>
-                <span className="text-ink">
-                  Competitive Two-Player Debate Game:
-                </span>{" "}
-                two users (or a user and the AI) generate unconventional
-                ideas anonymously; one is randomly assigned as a user&apos;s
-                position to defend, detaching the idea from its original
-                author before the debate starts. This format kept users
-                invested in an idea&apos;s substance even when they
-                hadn&apos;t chosen it themselves.
+                <span className="text-ink">Continuation &amp; Agency:</span>{" "}
+                Did they continue thinking about the problem or solution
+                after the session and take action toward change?
               </>,
             ]}
           />
           <p>
-            Each subsystem was intentionally built at a different fidelity
-            depending on what it needed to test — a low-fidelity chatbot for
-            rapid iteration on emotional-acknowledgment language, a visual
-            web interface for the role-distancing tool (since the sense of
-            &ldquo;visiting&rdquo; a fictional world depended on it feeling
-            explorable, not just conversational), and a chatbot-mediated
-            format for the debate game to preserve organic back-and-forth
-            between two real players.
+            These criteria helped us distinguish between{" "}
+            <strong className="text-ink">
+              generating an interesting idea
+            </strong>{" "}
+            and actually engaging with it deeply enough to matter.
           </p>
         </CaseStudySection>
 
-        <CaseStudySection heading="Research Process">
+        <CaseStudySection heading="What We Learned">
           <p>
-            I conducted 15+ user interviews and usability tests across the
-            three subsystems, primarily with CS education professors, using
-            a consistent testing structure: roughly 40–45 minutes of live
-            interaction with a subsystem, followed by a Q&amp;A session. We
-            evaluated each session against three outcomes we defined
-            ourselves:
+            Our biggest outcome wasn&apos;t a single successful prototype.
+            It was a change in how we understood the problem.
           </p>
-          <CaseList
-            items={[
-              <>
-                <span className="text-ink">Novelty:</span> The expert reaches
-                an idea or approach that neither themselves nor anyone else
-                in their field has thought about before.
-              </>,
-              <>
-                <span className="text-ink">Articulation of novelty:</span>{" "}
-                The expert is able to articulate why the new idea or approach
-                solves the problem in a way that existing approaches do not.
-              </>,
-              <>
-                <span className="text-ink">Continuation / agency:</span> The
-                expert continues to dwell on the problem and new solution
-                space after the testing session, and ultimately takes action
-                to effect change.
-              </>,
-            ]}
-          />
+          <p>We began by treating innovation as a cognitive challenge:</p>
+          <p className="text-ink">
+            Surface assumptions → Challenge norms → Generate novel ideas
+          </p>
           <p>
-            This structure allowed us to compare subsystems directly — for
-            instance, the role-distancing format got a professor to seriously
-            sit with an idea he&apos;d normally dismiss as &ldquo;too
-            idealistic,&rdquo; while the debate format was the only one where
-            continued engagement carried past the session itself.
+            Our testing suggested that this is only part of the problem.
+            Experts can understand an unconventional idea and even
+            recognize its potential value while still resisting it because
+            of identity, fear, and uncertainty.
+          </p>
+          <p>
+            This led us toward an{" "}
+            <strong className="text-ink">
+              emotion-first framework for AI-assisted innovation
+            </strong>
+            :
+          </p>
+          <p className="text-ink">Acknowledge → Distance → Invest</p>
+          <div className="space-y-4">
+            <div>
+              <p className="font-serif text-lg italic text-ink">
+                Acknowledge resistance
+              </p>
+              <p>
+                Help experts recognize and articulate the emotional
+                response to challenging their worldview.
+              </p>
+            </div>
+            <div>
+              <p className="font-serif text-lg italic text-ink">
+                Create distance
+              </p>
+              <p>
+                Give experts a low-stakes context where an unconventional
+                idea doesn&apos;t immediately feel like a judgment of
+                their own expertise or identity.
+              </p>
+            </div>
+            <div>
+              <p className="font-serif text-lg italic text-ink">
+                Encourage investment
+              </p>
+              <p>
+                Give experts a reason to stay with an idea, defend it, and
+                explore its implications long enough to determine whether
+                it has value.
+              </p>
+            </div>
+          </div>
+          <p>The broader design principle we&apos;re exploring is:</p>
+          <PullQuote>
+            AI may be most useful not when it generates the innovation for
+            experts, but when it creates the conditions that help experts
+            generate, explore, and defend their own ideas.
+          </PullQuote>
+        </CaseStudySection>
+
+        <CaseStudySection heading="Outcome &amp; What's Next">
+          <p>
+            By June, we&apos;d co-authored a first draft of a paper
+            proposing an{" "}
+            <strong className="text-ink">
+              emotion-first framework for AI-assisted innovation tools.
+            </strong>
+          </p>
+          <p>
+            I&apos;m continuing the project by exploring how the three
+            mechanisms could be combined into a single cohesive experience
+            and by planning larger-scale testing of the resulting system.
+          </p>
+          <p>
+            Our goal is to further validate the framework and eventually
+            submit the work to a major HCI conference.
           </p>
         </CaseStudySection>
 
-        <CaseStudySection heading="Outcome (In Progress)">
+        <CaseStudySection heading="Reflections">
+          <SubHeading>
+            Research means being willing to change the question.
+          </SubHeading>
           <p>
-            By June, we&apos;d co-authored a first draft of a paper proposing
-            an emotion-first framework for AI-assisted innovation: emotional
-            acknowledgment surfaces resistance, role-distancing gives experts
-            a safe space to sit with an alternative, and competition creates
-            structured investment in defending an idea&apos;s substance.
-            These were three complementary mechanisms we created for the same
-            underlying goal of temporarily decoupling experts from their
-            professional identity long enough to seriously consider
-            disruption. Combining the three subsystems into a single
-            cohesive experience is the direction I&apos;m continuing to
-            pursue as the project moves forward — I hope to eventually
-            publish the paper to a large HCI conference.
+            I entered DTR believing the problem was primarily cognitive.
+            Real users showed me that this was only part of the story. The
+            most valuable finding came from paying attention to moments
+            that didn&apos;t fit my original hypothesis.
+          </p>
+
+          <SubHeading>Define success before you test.</SubHeading>
+          <p>
+            Early on, I focused heavily on whether the system could
+            generate novel ideas. Over time, I learned to distinguish
+            between{" "}
+            <strong className="text-ink">
+              generating an idea, recognizing its value, and actually
+              continuing to pursue it.
+            </strong>
+          </p>
+
+          <SubHeading>
+            Real users reveal problems you can&apos;t anticipate yourself.
+          </SubHeading>
+          <p>
+            Self-testing helped me iterate quickly, but working with real
+            experts revealed emotional barriers I hadn&apos;t considered.
+            Watching hesitation, body language, and off-script reactions
+            became just as important as what participants explicitly told
+            us.
           </p>
         </CaseStudySection>
 
         <CaseStudyCredits>
-          Thank you to my research partner, Ilya Solovjov, for always
-          bringing a fresh perspective, listening to my rants, and not being
-          afraid to play devil&apos;s advocate. And I am in eternal debt to
-          our research advisor, Haoqi Zhang, for creating such a welcoming
-          space for exploration, creativity, and self-confrontation. I am
-          endlessly inspired by the brilliant minds of these two
-          individuals, as well as the rest of my friends in DTR.
+          Thank you to my research partner, Ilya Solovjov, for constantly
+          challenging my assumptions and bringing a fresh perspective to
+          the project, and to our advisor, Haoqi Zhang, for creating a
+          space where exploration, creativity, and self-confrontation are
+          encouraged. I&apos;m endlessly grateful to them and to the rest
+          of the DTR community for making this research possible.
         </CaseStudyCredits>
       </main>
       <Footer />
