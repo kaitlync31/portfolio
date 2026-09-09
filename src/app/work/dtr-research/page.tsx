@@ -110,7 +110,7 @@ export default function DTRResearch() {
             thinking.
           </p>
           <p>I designed an LLM workflow that guided users through:</p>
-          <p className="text-ink">
+          <p className="font-semibold text-ink">
             Problem → Existing approaches → Field norms → Legitimacy
             criteria → Challenge norms → Generate alternatives
           </p>
@@ -187,10 +187,10 @@ export default function DTRResearch() {
             ]}
           />
           <p>This became the turning point of the project.</p>
-          <p className="text-ink">
+          <PullQuote>
             The problem wasn&apos;t just generating disruptive ideas. It
             was being willing to stay with them.
-          </p>
+          </PullQuote>
           <p>
             We reframed our approach around an emotion-first question: how
             might AI help experts temporarily separate an idea from
@@ -333,7 +333,7 @@ export default function DTRResearch() {
             It was a change in how we understood the problem.
           </p>
           <p>We began by treating innovation as a cognitive challenge:</p>
-          <p className="text-ink">
+          <p className="font-semibold text-ink">
             Surface assumptions → Challenge norms → Generate novel ideas
           </p>
           <p>
@@ -346,7 +346,7 @@ export default function DTRResearch() {
             This led us toward an emotion-first framework for AI-assisted
             innovation:
           </p>
-          <p className="text-ink">Acknowledge → Distance → Invest</p>
+          <p className="font-semibold text-ink">Acknowledge → Distance → Invest</p>
           <div className="space-y-4">
             <div>
               <p className="font-serif text-lg italic text-ink">
@@ -382,7 +382,8 @@ export default function DTRResearch() {
           <PullQuote>
             AI may be most useful not when it generates the innovation for
             experts, but when it creates the conditions that help experts
-            generate, explore, and defend their own ideas.
+            generate, explore, and defend ideas, not only their own, and
+            resist the urge to run from them.
           </PullQuote>
         </CaseStudySection>
 
@@ -400,37 +401,6 @@ export default function DTRResearch() {
           <p>
             Our goal is to further validate the framework and eventually
             submit the work to a major HCI conference.
-          </p>
-        </CaseStudySection>
-
-        <CaseStudySection heading="Reflections">
-          <SubHeading>
-            Research means being willing to change the question.
-          </SubHeading>
-          <p>
-            I entered DTR believing the problem was primarily cognitive.
-            Real users showed me that this was only part of the story. The
-            most valuable finding came from paying attention to moments
-            that didn&apos;t fit my original hypothesis.
-          </p>
-
-          <SubHeading>Define success before you test.</SubHeading>
-          <p>
-            Early on, I focused heavily on whether the system could
-            generate novel ideas. Over time, I learned to distinguish
-            between generating an idea, recognizing its value, and
-            actually continuing to pursue it.
-          </p>
-
-          <SubHeading>
-            Real users reveal problems you can&apos;t anticipate yourself.
-          </SubHeading>
-          <p>
-            Self-testing helped me iterate quickly, but working with real
-            experts revealed emotional barriers I hadn&apos;t considered.
-            Watching hesitation, body language, and off-script reactions
-            became just as important as what participants explicitly told
-            us.
           </p>
         </CaseStudySection>
 
