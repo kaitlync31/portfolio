@@ -46,7 +46,7 @@ const SUPPORTING: SupportingProject[] = [
 
 const MORE_PROJECTS: { title: string; href?: string }[] = [
   { title: "CareOn Platform" },
-  { title: "OnTask" },
+  { title: "OnTask", href: "https://github.com/kaitlync31/on-task" },
   {
     title: "Group Dining Recommender",
     href: "https://github.com/kaitlync31/group-dining-recommender",
