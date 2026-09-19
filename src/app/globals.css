@@ -27,3 +27,51 @@ body {
 .font-serif {
   font-family: var(--font-serif);
 }
+
+/* Hero: the word "life" comes to life — letters rise in and warm to the
+   accent color, then an underline is drawn beneath. Plays once. */
+@keyframes life-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.3em);
+    color: var(--stone-light);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    color: var(--clay);
+  }
+}
+
+@keyframes life-draw {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.life-letter {
+  display: inline-block;
+  color: var(--clay);
+  animation: life-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(0.5s + var(--i) * 0.12s);
+}
+
+.life-underline path {
+  stroke-dasharray: 100;
+  animation: life-draw 0.9s ease-out both;
+  animation-delay: 1.2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .life-letter {
+    animation: none;
+  }
+
+  .life-underline path {
+    animation: none;
+    stroke-dasharray: none;
+  }
+}
