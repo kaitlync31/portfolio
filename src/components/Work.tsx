@@ -37,7 +37,7 @@ const SUPPORTING: SupportingProject[] = [
   {
     number: "05",
     title: "AI Safety Research",
-    tags: "Research · NLP · ML",
+    tags: "Research · NLP · Data",
     description:
       "An intensive learning experience on ML models, data processing, and AI safety through assisting a PhD student in his research.",
     href: "/work/ai-safety-research",
@@ -86,7 +86,7 @@ function SupportingCard({ project }: { project: SupportingProject }) {
 
 export default function Work() {
   return (
-    <Section id="work" title="Work" subtitle="Products, research, and things I've built.">
+    <Section id="work" title="Work">
       <Link href="/work/wsj-challenges" className="group block">
         <div className="aspect-[16/7] w-full overflow-hidden border border-line">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -128,7 +128,7 @@ export default function Work() {
 
       <div className="mt-20 border-t border-line pt-14">
         <p className="mb-2 font-sans text-xs uppercase tracking-[0.14em] text-stone">
-          More projects
+          More things I&apos;ve built
         </p>
         <ul className="divide-y divide-line">
           {MORE_PROJECTS.map((project) => {
