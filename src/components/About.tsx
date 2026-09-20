@@ -45,12 +45,20 @@ export default function About() {
           </div>
         </div>
         <div className="mx-auto w-full max-w-[16rem] sm:col-span-5 sm:col-start-8 sm:mx-0 sm:max-w-none lg:self-stretch">
-          <div className="aspect-square w-full overflow-hidden rounded-full border border-line lg:h-full lg:w-auto">
+          <div className="relative aspect-square w-full overflow-hidden rounded-full border border-line lg:h-full lg:w-auto">
+            {/* Blurred backdrop fills the edges so the portrait can sit zoomed out */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/portrait.jpg"
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 h-full w-full scale-150 object-cover object-[50%_25%] blur-2xl"
+            />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/portrait.jpg"
               alt="Portrait of Kaitlyn Chen"
-              className="h-full w-full object-cover object-[50%_25%]"
+              className="relative h-full w-full scale-[0.86] object-cover object-[50%_25%] [mask-image:radial-gradient(closest-side,#000_88%,transparent)]"
             />
           </div>
         </div>
