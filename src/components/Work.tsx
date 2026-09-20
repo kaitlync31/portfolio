@@ -45,7 +45,10 @@ const SUPPORTING: SupportingProject[] = [
 ];
 
 const MORE_PROJECTS: { title: string; href?: string }[] = [
-  { title: "CareOn Platform" },
+  {
+    title: "CareOn Platform",
+    href: "https://goofy-pen-616.notion.site/CareOn-SWD-Intern-3e0935e69d9a80ab9572f95db93f93b0",
+  },
   { title: "OnTask", href: "https://github.com/kaitlync31/on-task" },
   {
     title: "Group Dining Recommender",
