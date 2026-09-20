@@ -11,8 +11,8 @@ const INTERESTS = [
 export default function About() {
   return (
     <Section id="about" title="About">
-      <div className="grid gap-12 sm:grid-cols-12 sm:gap-x-10">
-        <div className="space-y-5 font-sans text-base leading-[1.8rem] text-stone sm:col-span-7">
+      <div className="grid gap-12 sm:grid-cols-12">
+        <div className="space-y-5 font-sans text-base leading-8 text-stone sm:col-span-7">
           <p>
             Originally from the Bay Area, I&apos;m a rising junior at
             Northwestern studying Computer Science and Cognitive Science
@@ -44,21 +44,13 @@ export default function About() {
             </ul>
           </div>
         </div>
-        <div className="mx-auto w-full max-w-[16rem] sm:col-span-5 sm:col-start-8 sm:mx-0 sm:max-w-none lg:self-stretch">
-          <div className="relative aspect-square w-full overflow-hidden rounded-full border border-line lg:h-full lg:w-auto">
-            {/* Blurred backdrop fills the edges so the portrait can sit zoomed out */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/portrait.jpg"
-              alt=""
-              aria-hidden="true"
-              className="absolute inset-0 h-full w-full scale-150 object-cover object-[50%_25%] blur-2xl"
-            />
+        <div className="sm:col-span-4 sm:col-start-9">
+          <div className="aspect-[4/5] w-full overflow-hidden border border-line">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/portrait.jpg"
               alt="Portrait of Kaitlyn Chen"
-              className="relative h-full w-full scale-[0.86] object-cover object-[50%_25%] [mask-image:radial-gradient(closest-side,#000_88%,transparent)]"
+              className="h-full w-full object-cover"
             />
           </div>
         </div>
