@@ -14,7 +14,7 @@ export default function About() {
       <div className="grid gap-12 sm:grid-cols-12">
         <div className="space-y-5 font-sans text-base leading-8 text-stone sm:col-span-7">
           <p>
-            Originally from the Bay Area, I&apos;m a rising junior at
+            Originally from the Bay Area, I&apos;m a junior at
             Northwestern studying Computer Science and Cognitive Science
             with a minor in Business Institutions. I have experience across
             product, design, software, and research, from early-stage
